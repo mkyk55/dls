@@ -1,0 +1,2302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/gothamfont.css">
+    <link rel="stylesheet" href="css/button.css" />
+    <script src="https://kit.fontawesome.com/24ced5e92c.js" crossorigin="anonymous"></script>
+
+
+    <title>Design Language System</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <i class="fas fa-bars" id="nav-toggler"></i>
+        <div>
+            <i class="fas fa-user-alt"></i>
+            <span>John Doe</span>
+        </div>
+
+    </header>
+
+    <nav id="nav">
+        <div>
+            <div class="logo">
+
+                <span><img src="assets/logo_new.png" alt="logo_ramboll" class="logo_ramb"/></span>
+            </div>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="/principle.html" class="nav__item-link">
+
+                        <span>Principles</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="accessibilty.html" class="nav__item-link">
+
+                        <span>Accessibilty</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>Visual Elements &nbsp; <i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+
+
+
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link active">
+
+                        <span>Components &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+                        <li>
+                            <a href="button.html" class="sub_link active-sub-link">Button</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>Layout &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="design_token.html" class="sub_link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>UX Writing</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>Resources</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <a href="#" class="sign-out">
+
+            <span>Version 1.1</span>
+        </a>
+    </nav>
+    <section class="home-section">
+        <div class="home-content">
+
+        </div>
+        <div class="ramb_sidemenu">
+            <div class="ram_sidemenu_text">
+                <p class="btn_rambla">Buttons</p>
+            </div>
+
+        </div>
+        <main_1>
+            <div>
+
+
+                <section_3 id="introduction">
+                    <div class="title-frame_ramb">
+                        <div class="flex_text">
+                            <div class="category">
+                                <div class="type-color_secondry">Components</div>
+                            </div>
+                            <div class="title-heading_ramb">
+                                Button
+                            </div>
+                            <div class="title-description_ramb">
+                                Introduce your component here! What is it? In general, when should it be used?
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <!--  new tab slides-->
+                    <div class="tabs_new_slide">
+
+                        <input type="radio" id="tab1" name="tab-control" checked>
+                        <input type="radio" id="tab2" name="tab-control">
+                        <input type="radio" id="tab3" name="tab-control">
+                        <input type="radio" id="tab4" name="tab-control">
+                        <ul>
+                            <li title="Design"><label for="tab1" role="button"><br><span>Design</span></label></li>
+                            <li title="Code"><label for="tab2" role="button"> <br><span>Code</span></label></li>
+                            <li title="Usage"><label for="tab3" role="button"><br><span>Usage</span></label></li>
+                            <li title="Best Practices"><label for="tab4" role="button"><br><span>Best Practices</span></label></li>
+                        </ul>
+
+                        <div class="slider">
+                            <div class="indicator"></div>
+                        </div>
+                        <div class="content">
+                            <!-- section1 content -->
+                            <section>
+                                <h2>Design</h2>
+                                <div class="tab-content_new">
+                                    <div class="tabs_design_text">
+                                        Primary Action Button
+                                    </div>
+                                    <p>The primary action shoud have a stronger visual weight</p>
+                                    <div class="image_primary_btn">
+                                        <img src="assets/primary_btn.png" alt="primary_btn">
+                                        <p class="prim_btn_text">Primary Button Style</p>
+                                    </div>
+
+
+
+                                </div>
+                            </section>
+                            <!-- section1 content end -->
+
+                            <!-- section2 content -->
+                            <section>
+                                <h2>Code</h2>
+                                <main_4 class="flex-container">
+
+                                    <section_6 class="main-content blue">
+                                        <h2>Output</h2>
+
+                                        <div class="button_primary_name">
+                                            <p>Defualt</p>
+                                            <p>Hover</p>
+                                            <p>Focused</p>
+                                            <p>Disabled</p>
+                                            <p>Tapped</p>
+
+                                        </div>
+                                        <div class="button_primary_ramb">
+                                            <button>Button</button>
+                                            <button class="btn_hover">Button</button>
+                                            <button class="btn_focus">Button</button>
+                                            <button class="btn_disabled">Button</button>
+                                            <button class="btn_trapped"><span>Button</span></button>
+
+                                        </div>
+
+
+
+                                    </section_6>
+                                </main_4>
+                                <main_5 class="flex-container_5">
+                                    <aside class="sidebar_content_5 green">
+                                        <div class="tabs_1" id="style-6">
+                                            <div class="tab-header1">
+                                                <div class="active_5">
+                                                    <i class="fas fa-code"></i> HTML
+                                                </div>
+
+
+
+                                                <div>
+                                                    <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-server"></i> REACT
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                </div>
+                                            </div>
+                                            <div class="tab-indicator1">
+
+                                            </div>
+                                            <div class="tab-body1">
+                                                <div class="active_5">
+                                                    <h2>This is html section </h2>
+
+                                                    <div id="content_1_tab">
+                                                        &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Defualt&lt;/p&gt; <br>&lt;p&gt;Hover&lt;/p&gt;<br> &lt;p&gt;Focused&lt;/p&gt;<br> &lt;p&gt;Disabled&lt;/p&gt;<br> &lt;p&gt;Tapped&lt;/p&gt;<br>&lt;/div&gt;
+                                                        <br>&lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button&gt;Button<br>&lt;/button&gt; <br>&lt;button class=&quot;btn_hover&quot;&gt;Button<br>&lt;/button&gt; <br>&lt;button class=&quot;btn_focus&quot;&gt;Button<br>&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_disabled&quot;&gt;Button<br>&lt;/button&gt; <br>&lt;button class=&quot;btn_trapped&quot;&gt;<br>&lt;span&gt;Button<br>&lt;/span&gt;<br>&lt;/button&gt;<br> &lt;/div&gt;
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div>
+                                                    <h2>This is react section </h2>
+
+                                                    <p>import logo from './logo.svg'; <br>import React from 'react'; <br>import './App.css'; <br>function App() {<br> return (<br>
+                                                        < div className="App"> <br> &lt;div className=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Defualt&lt;/p&gt; <br>&lt;p&gt;Hover&lt;/p&gt;<br> &lt;p&gt;Focused&lt;/p&gt;<br> &lt;p&gt;Disabled&lt;/p&gt; <br>&lt;p&gt;Tapped&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                            <br> &lt;div className=&quot;button_primary_ramb&quot;&gt; <br>&lt;button&gt;Button&lt;/button&gt; <br>&lt;button className=&quot;btn_hover&quot;&gt;Button&lt;/button&gt; <br>&lt;button className=&quot;btn_focus&quot;&gt;Button&lt;/button&gt;<br>                                                            &lt;button className=&quot;btn_disabled&quot;&gt;Button&lt;/button&gt;<br> &lt;button className=&quot;btn_trapped&quot;&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt; &lt;/div&gt;
+
+
+                                                            < /div>
+                                                                <br> ); <br>} export default App;</p>
+
+
+
+
+
+
+                                                </div>
+
+                                                <div>
+                                                    <h2>This is Angular section </h2>
+
+
+                                                    <p>import { Component } from '@angular/core';<br> @Component({
+
+                                                        <br> selector: 'app-root',<br> templateUrl: './app.component.html',<br> styleUrls: ['./app.component.scss']<br> })
+                                                        <br> export class AppComponent {<br> title = 'dlsComponent';} <br>&lt;div className=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Defualt&lt;/p&gt; <br>&lt;p&gt;Hover&lt;/p&gt;<br> &lt;p&gt;Focused&lt;/p&gt;<br>&lt;p&gt;Disabled&lt;/p&gt;
+                                                        <br>&lt;p&gt;Tapped&lt;/p&gt; &lt;/div&gt;
+                                                        <br> &lt;div className=&quot;button_primary_ramb&quot;&gt; <br>&lt;button&gt;Button&lt;/button&gt; <br>&lt;button className=&quot;btn_hover&quot;&gt;Button&lt;/button&gt; <br>&lt;button className=&quot;btn_focus&quot;&gt;Button&lt;/button&gt;<br>&lt;button
+                                                        className=&quot;btn_disabled&quot;&gt;Button&lt;/button&gt;
+                                                        <br> &lt;button className=&quot;btn_trapped&quot;&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt; &lt;/div&gt;
+
+
+                                                    </p>
+
+
+
+
+
+                                                </div>
+                                                <div>
+                                                    <h2>This is CSS section </h2>
+                                                    <p> .button_primary_name { display: flex; justify-content: space-around; margin-top: 3%;<br> >p { font-family: 'GothamRounded-Book'; font-style: normal; font-weight: 325; font-size: 20px; line-height: 24px;
+                                                        color: #797766; } }
+                                                        <br> .button_primary_ramb { display: flex; justify-content: space-around; margin-top: 2%;<br> >button { width: 157px; height: 60px; background: #009DF0; border: 0px; color: #FFFFFF; font-size: 18px;
+                                                        font-family: 'GothamRounded-Book'; border-radius: 4px; cursor: pointer; } }
+                                                        <br> .btn_hover {<br> &:hover { background-color: #008AD4 !important; } }
+                                                        <br> .btn_focus {<br> &:focus { background-color: #009DF0 !important; border: 1px solid black; } }
+                                                        <br> .btn_disabled { background-color: #CCEBFC !important; cursor: not-allowed !important; }
+                                                        <br> .btn_trapped {<br> >span { border: 19px solid #33B1F3 !important; border-radius: 126px !important; background-color: #33B1F3; } }</p>
+
+
+                                                </div>
+                                                <div>
+                                                    <h2>This is Service section </h2>
+
+                                                    import React from 'react'; import './App.css'; function App() { return (
+                                                    <div className="App">
+                                                        <div className="button_primary_name">
+                                                            <p>Defualt</p>
+                                                            <p>Hover</p>
+                                                            <p>Focused</p>
+                                                            <p>Disabled</p>
+                                                            <p>Tapped</p>
+
+                                                        </div>
+                                                        <div className="button_primary_ramb">
+                                                            <button>Button</button>
+                                                            <button className="btn_hover">Button</button>
+                                                            <button className="btn_focus">Button</button>
+                                                            <button className="btn_disabled">Button</button>
+                                                            <button className="btn_trapped"><span>Button</span></button>
+
+                                                        </div>
+                                                    </div>
+                                                    ); } export default App;
+
+
+                                                </div>
+                                                <!-- <div>
+                                                    <h2>This is Contact section </h2>
+
+
+
+
+
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                        veniam! Quidem, illum.</p>
+                                                </div> -->
+
+                                            </div>
+                                        </div>
+
+
+                                    </aside>
+                                </main_5>
+
+
+
+                            </section>
+
+                            <!-- section2 content end -->
+
+                            <!-- section3 content -->
+                            <section>
+                                <h2>Usage</h2>
+                                <div class="tab-content_new">
+                                    <div class="tabs_design_text_usage">
+                                        Primary Button Usage Guidelines
+                                    </div>
+
+                                    <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                                        <li>1) Use a primary button to indicate the primary action, i.e. what we want the user to click or experience.</li>
+                                        <li>2) The button should have text or icon that should describe the action of the button.</li>
+                                        <li>3) Don't use a button to navigate to another place, Use tertiary button instead.</li>
+                                        <li>4) Use sentence-style capitalization Ex: Submit Save.</li>
+                                        <li>5) Color of the Button should be as per design system.</li>
+                                    </ul>
+
+
+
+                                </div>
+
+                                <div class="container_do">
+
+                                    <div class="layout">
+                                        <p class="col col-main">
+                                            <strong>Do</strong><br>
+
+                                        </p>
+                                        <p class="col_1 col-complementary" role="complementary">
+                                            <strong>Don't</strong><br>
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+
+                            </section>
+                            <!-- section3 content end -->
+
+                            <!-- section4 content start -->
+                            <section>
+                                <h2>Best Practices</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                            <!-- section4 content end -->
+                        </div>
+                    </div>
+
+                    <!--  new tabs slides end -->
+
+
+
+                </section_3>
+                <section_3 id="request-response">
+                    <h2 class="secd_action_btn">Secondary Action Button</h2>
+                    <div class="tabs_new_slide_1">
+
+                        <input type="radio" id="tab5" name="tab-control_1" checked>
+                        <input type="radio" id="tab6" name="tab-control_1">
+                        <input type="radio" id="tab7" name="tab-control_1">
+                        <input type="radio" id="tab8" name="tab-control_1">
+                        <ul>
+                            <li title="Design"><label for="tab5" role="button"><br><span>Design</span></label></li>
+                            <li title="Code"><label for="tab6" role="button"> <br><span>Code</span></label></li>
+                            <li title="Usage"><label for="tab7" role="button"><br><span>Usage</span></label></li>
+                            <li title="Best Practices"><label for="tab8" role="button"><br><span>Best Practices</span></label></li>
+                        </ul>
+
+                        <div class="slider">
+                            <div class="indicator"></div>
+                        </div>
+                        <div class="content">
+                            <!-- section1 content -->
+                            <section>
+                                <h2>Design</h2>
+                                <div class="tab-content_new">
+                                    <div class="tabs_design_text">
+                                        Secondary Action Button
+                                    </div>
+                                    <p>The secondary action shoud have a stronger visual weight</p>
+                                    <div class="image_primary_btn">
+                                        <img src="assets/primary_btn.png" alt="primary_btn">
+                                        <p class="prim_btn_text">Secondary Button Style</p>
+                                    </div>
+
+
+
+                                </div>
+                            </section>
+                            <!-- section1 content end -->
+
+                            <!-- section2 content -->
+                            <section>
+                                <h2>Code</h2>
+                                <main_4 class="flex-container">
+
+                                    <section_6 class="main-content blue">
+                                        <h2>Output</h2>
+
+                                        <div class="button_primary_name">
+                                            <p>Defualt</p>
+                                            <p>Hover</p>
+                                            <p>Focused</p>
+                                            <p>Disabled</p>
+                                            <p>Tapped</p>
+
+                                        </div>
+                                        <div class="button_primary_ramb">
+                                            <button class="btn_default">Submit</button>
+                                            <button class="btn_hover_secd">Submit</button>
+                                            <button class="btn_focus_secd">Submit</button>
+                                            <button class="btn_disabled_secd">Submit</button>
+                                            <button class="btn_trapped_secd"><span>Submit</span></button>
+
+                                        </div>
+
+
+
+                                    </section_6>
+                                </main_4>
+                                <main_5 class="flex-container_5">
+                                    <aside class="sidebar_content_5 green">
+                                        <div class="tabs_new_1" id="style-6">
+                                            <div class="tab-header1_new">
+                                                <div class="active_5_new">
+                                                    <i class="fas fa-code"></i> HTML
+                                                </div>
+
+
+
+                                                <div>
+                                                    <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-server"></i> REACT
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-indicator1_new">
+
+                                            </div>
+                                            <div class="tab-body1_new">
+                                                <div class="active_5_new">
+                                                    <h2>This is code section </h2>
+
+                                                    <div id="content_1_tab">
+                                                        &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Defualt&lt;/p&gt;
+                                                        <br> &lt;p&gt;Hover&lt;/p&gt;
+                                                        <br> &lt;p&gt;Focused&lt;/p&gt;
+                                                        <br> &lt;p&gt;Disabled&lt;/p&gt;
+                                                        <br> &lt;p&gt;Tapped&lt;/p&gt;
+                                                        <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_default&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_hover_secd&quot;&gt;Submit<br>&lt;/button&gt;<br>                                                        &lt;button class=&quot;btn_focus_secd&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_disabled_secd&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_trapped_secd&quot;&gt;<br>&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;<br>                                                        &lt;/div&gt;
+                                                    </div>
+
+
+
+                                                </div>
+
+                                                <div>
+                                                    <h2>This is CSS section </h2>
+
+
+                                                    <p>
+                                                        import React from 'react'<br> import './Btn.css'<br> export const BtnSecd = () => {<br> return (<br>
+                                                        < div>
+                                                            &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Defualt&lt;/p&gt;
+                                                            <br> &lt;p&gt;Hover&lt;/p&gt;
+                                                            <br> &lt;p&gt;Focused&lt;/p&gt;
+                                                            <br> &lt;p&gt;Disabled&lt;/p&gt;
+                                                            <br> &lt;p&gt;Tapped&lt;/p&gt;
+                                                            <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_default&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_hover_secd&quot;&gt;Submit<br>&lt;/button&gt;<br>                                                            &lt;button class=&quot;btn_focus_secd&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_disabled_secd&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_trapped_secd&quot;&gt;<br>&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;<br>                                                            &lt;/div&gt;
+
+
+                                                            < /div>
+                                                                ) } export default BtnSecd
+
+
+                                                    </p>
+
+
+
+
+
+                                                </div>
+                                                <div>
+                                                    <h2>This is CSS section </h2>
+                                                    <p>
+                                                        import { Component, OnInit } from '@angular/core';<br> @Component({
+
+                                                        <br> selector: 'app-secondary-component',<br> templateUrl: './secondary-component.component.html',<br> styleUrls: ['./secondary-component.component.scss']<br> })
+                                                        <br> export class SecondaryComponentComponent implements OnInit { constructor() { }<br> ngOnInit(): void { } } &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Defualt&lt;/p&gt;
+                                                        <br> &lt;p&gt;Hover&lt;/p&gt;
+                                                        <br> &lt;p&gt;Focused&lt;/p&gt;
+                                                        <br> &lt;p&gt;Disabled&lt;/p&gt;
+                                                        <br> &lt;p&gt;Tapped&lt;/p&gt;
+                                                        <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_default&quot;&gt;Submit&lt;/button&gt;<br> &lt;button class=&quot;btn_hover_secd&quot;&gt;Submit<br>&lt;/button&gt;<br>&lt;button
+                                                        class=&quot;btn_focus_secd&quot;&gt;Submit&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_disabled_secd&quot;&gt;Submit&lt;/button&gt; &lt;button class=&quot;btn_trapped_secd&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt; &lt;/div&gt;
+
+
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h2>This is Service section </h2>
+
+                                                    <p>
+                                                        $color_1: #009DF0; $color_2: #CCEBFC; <br>$background-color_1: white;<br> $background-color_2: #E6F5FD; <br>$background-color_3: #FFFFFF;<br> $background-color_4: #E5F5FE;<br> .button_primary_name
+                                                        { display: flex; justify-content: space-around; margin-top: 3%; >p { font-family: 'GothamRounded-Book'; font-style: normal; font-weight: 325; font-size: 20px; line-height: 24px; color: #797766; }
+                                                        } <br>.button_primary_ramb { display: flex; justify-content: space-around; margin-top: 2%; <br>>button { width: 157px; height: 60px; background: #009DF0; border: 0px; color: #FFFFFF; font-size: 18px;
+                                                        font-family: 'GothamRounded-Book'; border-radius: 4px; cursor: pointer; } } <br>.btn_default { border: 2px solid #009DF0 !important; background-color: $background-color_1 !important; color: $color_1
+                                                        !important; } <br>.btn_hover_secd { border: 2px solid #009DF0 !important; background-color: $background-color_1 !important; color: $color_1 !important; &:hover { background-color: $background-color_2
+                                                        !important; } } <br>.btn_focus_secd { border: 2px solid #009DF0 !important; background-color: $background-color_1 !important; color: $color_1 !important; &:focus { border: 1px solid black !important;
+                                                        } } .btn_disabled_secd { background-color: $background-color_3 !important; border: 2px solid #CCEBFC !important; color: $color_2 !important; cursor: not-allowed !important; } .btn_trapped_secd {
+                                                        background-color: $background-color_3 !important; border: 2px solid #009DF0 !important; >span { border: 17px solid #E5F5FE !important; border-radius: 126px !important; background-color: $background-color_4;
+                                                        color: $color_1 !important; } }
+
+
+                                                    </p>
+
+
+                                                </div>
+                                                <div>
+                                                    <h2>This is Contact section </h2>
+
+
+
+
+
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                        veniam! Quidem, illum.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </aside>
+                                </main_5>
+                            </section>
+
+                            <!-- section2 content end -->
+
+                            <!-- section3 content -->
+                            <section>
+                                <h2>Usage</h2>
+                                <div class="tab-content_new">
+                                    <div class="tabs_design_text_usage">
+                                        Secondary Button Usage Guidelines
+                                    </div>
+
+                                    <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                                        <li>1) This button is to support the primary action button Ex: Cancel, No , i.e. what alternate action can a user click or experience.</li>
+                                        <li>2) The button should have text that should describe the action of the button.</li>
+                                        <li>3) Don't use a button to navigate to another place use tertiary button instead.</li>
+                                        <li>4) Use sentence-style capitalization Ex: Submit Save.</li>
+                                        <li>5) Color of the Button should be as per design system.</li>
+                                    </ul>
+
+
+
+
+                                </div>
+
+                                <div class="container_do">
+
+                                    <div class="layout">
+                                        <p class="col col-main">
+                                            <strong>Do</strong><br>
+
+                                        </p>
+                                        <p class="col_1 col-complementary" role="complementary">
+                                            <strong>Don't</strong><br>
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+
+                            </section>
+                            <!-- section3 content end -->
+
+                            <!-- section4 content start -->
+                            <section>
+                                <h2>Best Practices</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                            <!-- section4 content end -->
+                        </div>
+                    </div>
+
+                </section_3>
+                <section_3 id="authentication">
+                    <h2 class="secd_action_btn">Floating Action Button</h2>
+                    <p class="float_text">A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center.</p>
+
+                    <!-- new code tabs floating action btn start-->
+                    <div class="tabs_new_slide_2">
+
+                        <input type="radio" id="tab9" name="tab-control_2" checked>
+                        <input type="radio" id="tab10" name="tab-control_2">
+                        <input type="radio" id="tab11" name="tab-control_2">
+                        <input type="radio" id="tab12" name="tab-control_2">
+                        <ul>
+                            <li title="Design"><label for="tab9" role="button"><br><span>Design</span></label></li>
+                            <li title="Code"><label for="tab10" role="button"> <br><span>Code</span></label></li>
+                            <li title="Usage"><label for="tab11" role="button"><br><span>Usage</span></label></li>
+                            <li title="Best Practices"><label for="tab12" role="button"><br><span>Best Practices</span></label></li>
+                        </ul>
+
+                        <div class="slider">
+                            <div class="indicator"></div>
+                        </div>
+                        <div class="content">
+                            <!-- section1 content -->
+                            <section>
+                                <h2>Design</h2>
+                                <div class="tab-content_new">
+                                    <div class="tabs_design_text">
+                                        Floating Action Button
+                                    </div>
+                                    <p>The Floating action shoud have a stronger visual weight</p>
+                                    <div class="image_primary_btn">
+                                        <img src="assets/primary_btn.png" alt="primary_btn">
+                                        <p class="prim_btn_text">Foating Button Style</p>
+                                    </div>
+
+
+
+                                </div>
+                            </section>
+                            <!-- section1 content end -->
+
+                            <!-- section2 content -->
+                            <section>
+                                <h2>Code</h2>
+                                <main_4 class="flex-container">
+
+                                    <section_6 class="main-content blue">
+                                        <h2>Output</h2>
+
+                                        <div class="button_primary_name">
+                                            <p>Icon</p>
+                                            <p>Text-Extended</p>
+                                            <p>Transition</p>
+
+
+                                        </div>
+                                        <div class="button_primary_ramb">
+                                            <button class="btn_icon"><img src="/assets/icon_btn.svg" alt="iconBtn"></button>
+                                            <button class="btn_icon_extend">New Payment</button>
+                                            <div class="col_icon">
+                                                <button class="btn_icon_1"><img src="/assets/icon_document.svg" alt="iconBtn"></button>
+                                                <button class="btn_icon_2"><img src="/assets/icon_video.svg" alt="iconBtn"></button>
+                                                <button class="btn_icon_3"><img src="/assets/icon_feedback.svg" alt="iconBtn"></button>
+                                                <button class="btn_icon_4"><img src="/assets/icon_quest.svg" alt="iconBtn"></button>
+                                            </div>
+
+
+                                        </div>
+
+
+
+                                    </section_6>
+                                </main_4>
+                                <main_5 class="flex-container_5">
+                                    <aside class="sidebar_content_5 green">
+                                        <div class="tabs_new_2" id="style-6">
+                                            <div class="tab-header2_new">
+                                                <div class="active_6_new">
+                                                    <i class="fas fa-code"></i> HTML
+                                                </div>
+
+
+
+                                                <div>
+                                                    <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-server"></i> REACT
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-indicator2_new">
+
+                                            </div>
+                                            <div class="tab-body2_new">
+                                                <div class="active_6_new">
+                                                    <h2>This is code section </h2>
+
+                                                    <div id="content_1_tab">
+                                                        &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Icon&lt;/p&gt;
+                                                        <br> &lt;p&gt;Text-Extended&lt;/p&gt;
+                                                        <br> &lt;p&gt;Transition&lt;/p&gt;
+                                                        <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_icon&quot;&gt;&lt;img src=&quot;/assets/icon_btn.svg&quot; alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;<br>                                                        &lt;button class=&quot;btn_icon_extend&quot;&gt;New Payment&lt;/button&gt;<br> &lt;div class=&quot;col_icon&quot;&gt;<br> &lt;button class=&quot;btn_icon_1&quot;&gt;&lt;img src=&quot;/assets/icon_document.svg&quot;
+                                                        alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_icon_2&quot;&gt;&lt;img src=&quot;/assets/icon_video.svg&quot; alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;<br> &lt;button class=&quot;btn_icon_3&quot;&gt;&lt;img src=&quot;/assets/icon_feedback.svg&quot;
+                                                        alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_icon_4&quot;&gt;&lt;img src=&quot;/assets/icon_quest.svg&quot; alt=&quot;iconBtn&quot;<br>&gt;&lt;/button&gt; &lt;/div&gt; <br>&lt;/div&gt;
+                                                    </div>
+
+
+
+                                                </div>
+
+                                                <div>
+                                                    <h2>This is React section </h2>
+
+
+                                                    <p>
+                                                        import React from 'react'<br> import './icon.css'<br> export const IconBtn = () => {<br> return ( <br> &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Icon&lt;/p&gt;
+                                                        <br> &lt;p&gt;Text-Extended&lt;/p&gt;
+                                                        <br> &lt;p&gt;Transition&lt;/p&gt;
+                                                        <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_icon&quot;&gt;&lt;img src=&quot;/assets/icon_btn.svg&quot; alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;<br>                                                        &lt;button class=&quot;btn_icon_extend&quot;&gt;New Payment&lt;/button&gt;<br> &lt;div class=&quot;col_icon&quot;&gt;<br> &lt;button class=&quot;btn_icon_1&quot;&gt;&lt;img src=&quot;/assets/icon_document.svg&quot;
+                                                        alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_icon_2&quot;&gt;&lt;img src=&quot;/assets/icon_video.svg&quot; alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;<br> &lt;button class=&quot;btn_icon_3&quot;&gt;&lt;img src=&quot;/assets/icon_feedback.svg&quot;
+                                                        alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_icon_4&quot;&gt;&lt;img src=&quot;/assets/icon_quest.svg&quot; alt=&quot;iconBtn&quot;<br>&gt;&lt;/button&gt; &lt;/div&gt; <br>&lt;/div&gt;
+
+
+                                                        < /div>
+                                                            ) } export default IconBtn
+                                                    </p>
+
+
+
+
+                                                </div>
+                                                <div>
+                                                    <h2>This is Angular section </h2>
+                                                    <p>import { Component, OnInit } from '@angular/core';<br> @Component({ selector: 'app-floating',<br> templateUrl: './floating.component.html',<br> styleUrls: ['./floating.component.scss']<br> }) export
+                                                        class FloatingComponent implements OnInit {<br> constructor() { }<br> ngOnInit(): void { } } &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Icon&lt;/p&gt;
+                                                        <br> &lt;p&gt;Text-Extended&lt;/p&gt;
+                                                        <br> &lt;p&gt;Transition&lt;/p&gt;
+                                                        <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_icon&quot;&gt;&lt;img src=&quot;/assets/icon_btn.svg&quot; alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;<br>                                                        &lt;button class=&quot;btn_icon_extend&quot;&gt;New Payment&lt;/button&gt;<br> &lt;div class=&quot;col_icon&quot;&gt;<br> &lt;button class=&quot;btn_icon_1&quot;&gt;&lt;img src=&quot;/assets/icon_document.svg&quot;
+                                                        alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_icon_2&quot;&gt;&lt;img src=&quot;/assets/icon_video.svg&quot; alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;<br> &lt;button class=&quot;btn_icon_3&quot;&gt;&lt;img src=&quot;/assets/icon_feedback.svg&quot;
+                                                        alt=&quot;iconBtn&quot;&gt;&lt;/button&gt;
+                                                        <br> &lt;button class=&quot;btn_icon_4&quot;&gt;&lt;img src=&quot;/assets/icon_quest.svg&quot; alt=&quot;iconBtn&quot;<br>&gt;&lt;/button&gt; &lt;/div&gt; <br>&lt;/div&gt;
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h2>This is SCSS section </h2>
+                                                    .button_primary_name { display: flex; justify-content: space-around; margin-top: 3%; >p { font-family: 'GothamRounded-Book'; font-style: normal; font-weight: 325; font-size: 20px; line-height: 24px; color: #797766; } }
+                                                    <br> .button_primary_ramb { display: flex; justify-content: space-around; margin-top: 2%; >button { width: 157px; height: 60px; background: #009DF0; border: 0px; color: #FFFFFF; font-size: 18px; font-family:
+                                                    'GothamRounded-Book'; border-radius: 4px; cursor: pointer; } }
+                                                    <br> .btn_icon { height: 56px !important; width: 56px !important; border-radius: 50% !important; margin-left: 3%; }
+                                                    <br> .btn_icon_extend { width: 257px !important; height: 72px !important; border-radius: 15px !important; }
+                                                    <br> .col_icon { width: 14%; margin-top: -8px; }
+                                                    <br> .btn_icon_1 { height: 56px !important; width: 56px !important; border-radius: 50% !important; margin-left: 3%; border: 0px solid; background: #009DF0; }
+                                                    <br> .btn_icon_2 { height: 56px !important; width: 56px !important; border-radius: 50% !important; margin-left: 3%; border: 0px solid; background: #009DF0; padding-top: 6px; }
+                                                    <br> .btn_icon_3 { height: 56px !important; width: 56px !important; border-radius: 50% !important; margin-left: 3%; margin-top: 2px; border: 0px solid; background: #009DF0; }
+                                                    <br> .btn_icon_4 { height: 56px !important; width: 56px !important; border-radius: 50% !important; margin-left: 3%; border: 0px solid; background: #375B8B; }
+
+
+
+
+                                                </div>
+                                                <div>
+                                                    <h2>This is Contact section </h2>
+
+
+
+
+
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                        veniam! Quidem, illum.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </aside>
+                                </main_5>
+                            </section>
+
+                            <!-- section2 content end -->
+
+                            <!-- section3 content -->
+                            <section>
+                                <h2>Usage</h2>
+                                <div class="tab-content_new">
+                                    <div class="tabs_design_text_usage">
+                                        Floating Action Button Usage Guidelines
+                                    </div>
+
+                                    <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                                        <li>1) Use Floating Action Button for most commonly used action on the screen.</li>
+                                        <li>2) Use descriptive icons for FAB, avoid using unclear icons. Examples-.</li>
+                                        <li>3) Use only one FAB per screen.</li>
+                                        <li>4) When we have set of actions inside FAB, those action should be related to primary action. Add labels to those actions.</li>
+
+                                    </ul>
+
+
+
+
+                                </div>
+
+                                <div class="container_do">
+
+                                    <div class="layout">
+                                        <p class="col col-main">
+                                            <strong>Do</strong><br>
+
+                                        </p>
+
+                                        <p class="col_1 col-complementary" role="complementary">
+                                            <strong>Don't</strong><br>
+                                        </p>
+
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+
+                                <div class="container_text_layout">
+
+                                    <div class="layout_text_ramb">
+                                        <p class="col_ramb col-main_ramb">
+                                            Represent the most common primary action with a floating action button, such as the primary set of tools.<br>
+
+                                        </p>
+                                        <p class="col_ramb col-complementary_ramb" role="complementary">
+                                            The floating action button cannot be represented with inverted texts which effects readability.<br>
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="container_text_layout_1">
+
+                                    <div class="layout_text_ramb">
+                                        <p class="col_ramb col-main_ramb">
+                                            A primary action can have minimum of three options and maximum of five options.<br>
+
+                                        </p>
+                                        <p class="col_ramb col-complementary_ramb" role="complementary">
+                                            A primary action should’nt contain a single action alone.<br>
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="container_text_layout_2">
+
+                                    <div class="layout_text_ramb">
+                                        <p class="col_ramb col-main_ramb">
+                                            Use Floating Action Button for primary, positive actions.<br>
+
+                                        </p>
+                                        <p class="col_ramb col-complementary_ramb" role="complementary">
+                                            Do not use Floating Action Button for minor, overflow, unclear, or destructive actions.<br>
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+
+                            </section>
+                            <!-- section3 content end -->
+
+                            <!-- section4 content start -->
+                            <section>
+                                <h2>Best Practices</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                            <!-- section4 content end -->
+                        </div>
+                    </div>
+
+
+                </section_3>
+                <section_3 id="endpoints">
+                    <h2 class="secd_action_btn">Button States</h2>
+                    <section_3 id="endpoints--root">
+                        <h5 class="btn_state">Different button states are elaborated below</h5>
+                        <p>
+                            <ul class="btn_st_list">
+                                <li>Default</li>
+                                <li>Hover</li>
+                                <li>Focus</li>
+                                <!-- <li>Active</li>
+                                <li>Disabled</li> -->
+                            </ul>
+                        </p>
+
+                        <!-- new code tabs button cta start  -->
+                        <div class="tabs_new_slide_3">
+
+                            <input type="radio" id="tab13" name="tab-control_3" checked>
+                            <input type="radio" id="tab14" name="tab-control_3">
+                            <input type="radio" id="tab15" name="tab-control_3">
+                            <input type="radio" id="tab16" name="tab-control_3">
+                            <ul>
+                                <li title="Design"><label for="tab13" role="button"><br><span>Design</span></label></li>
+                                <li title="Code"><label for="tab14" role="button"> <br><span>Code</span></label></li>
+                                <li title="Usage"><label for="tab15" role="button"><br><span>Usage</span></label></li>
+                                <li title="Best Practices"><label for="tab16" role="button"><br><span>Best Practices</span></label></li>
+                            </ul>
+
+                            <div class="slider">
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content">
+                                <!-- section1 content -->
+                                <section>
+                                    <h2>Design</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text">
+                                            Button States
+                                        </div>
+                                        <p>The Button States shoud have a stronger visual weight</p>
+                                        <div class="image_primary_btn">
+                                            <img src="assets/primary_btn.png" alt="primary_btn">
+                                            <p class="prim_btn_text">States Button Style</p>
+                                        </div>
+
+
+
+                                    </div>
+                                </section>
+                                <!-- section1 content end -->
+
+                                <!-- section2 content -->
+                                <section>
+                                    <h2>Code</h2>
+                                    <main_4 class="flex-container">
+
+                                        <section_6 class="main-content blue">
+                                            <h2>Output</h2>
+
+                                            <div class="button_primary_name">
+                                                <p>Default</p>
+                                                <p>Hover</p>
+                                                <p>Focused</p>
+
+
+                                            </div>
+                                            <div class="button_primary_ramb">
+                                                <button class="btn_cta">Register Now</button>
+                                                <button class="btn_cta_hover">Register Now</button>
+                                                <button class="btn_cta_focs">Register Now</button>
+
+
+                                            </div>
+
+
+
+                                        </section_6>
+                                    </main_4>
+                                    <main_5 class="flex-container_5">
+                                        <aside class="sidebar_content_5 green">
+                                            <div class="tabs_new_3" id="style-6">
+                                                <div class="tab-header3_new">
+                                                    <div class="active_7_new">
+                                                        <i class="fas fa-code"></i> HTML
+                                                    </div>
+
+
+
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-server"></i> REACT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-indicator3_new">
+
+                                                </div>
+                                                <div class="tab-body3_new">
+                                                    <div class="active_7_new">
+                                                        <h2>This is code section </h2>
+
+                                                        <div id="content_1_tab">
+                                                            &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;p&gt;Hover&lt;/p&gt;
+                                                            <br> &lt;p&gt;Focused&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_cta&quot;&gt;Register Now&lt;/button&gt;<br> &lt;button class=&quot;btn_cta_hover&quot;&gt;Register
+                                                            Now&lt;/button&gt;
+                                                            <br> &lt;button class=&quot;btn_cta_focs&quot;&gt;Register Now&lt;/button&gt; &lt;/div&gt;
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                    <div>
+                                                        <h2>This is CSS section </h2>
+
+
+                                                        <p>
+                                                            import React from 'react'<br> import './Cta.css';<br> export const Cta = () => {<br> return (<br>
+                                                            < div>
+
+                                                                &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                                <br> &lt;p&gt;Hover&lt;/p&gt;
+                                                                <br> &lt;p&gt;Focused&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_cta&quot;&gt;Register Now&lt;/button&gt;<br> &lt;button class=&quot;btn_cta_hover&quot;&gt;Register
+                                                                Now&lt;/button&gt;
+                                                                <br> &lt;button class=&quot;btn_cta_focs&quot;&gt;Register Now&lt;/button&gt; &lt;/div&gt;
+
+                                                                < /div>
+                                                                    ) } export default Cta;
+                                                        </p>
+
+
+
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is CSS section </h2>
+                                                        <p>
+                                                            import { Component, OnInit } from '@angular/core';<br> @Component({
+
+                                                            <br> selector: 'app-cta',<br> templateUrl: './cta.component.html',<br> styleUrls: ['./cta.component.scss'] })
+                                                            <br> export class CtaComponent implements OnInit { <br> constructor() { }<br> ngOnInit(): void { } }<br> &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;p&gt;Hover&lt;/p&gt;
+                                                            <br> &lt;p&gt;Focused&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_cta&quot;&gt;Register Now&lt;/button&gt;<br> &lt;button class=&quot;btn_cta_hover&quot;&gt;Register
+                                                            Now&lt;/button&gt;
+                                                            <br> &lt;button class=&quot;btn_cta_focs&quot;&gt;Register Now&lt;/button&gt; &lt;/div&gt;
+
+
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Service section </h2>
+
+                                                        <p>
+                                                            $background-color_1: #FF8854;<br> $background-color_2: #FF9F76;<br> .button_primary_name { display: flex; justify-content: space-around; margin-top: 3%;
+                                                            <br>>p { font-family: 'GothamRounded-Book'; font-style: normal; font-weight: 325; font-size: 20px; line-height: 24px; color: #797766; } }
+                                                            <br> .button_primary_ramb { display: flex; justify-content: space-around; margin-top: 2%; >button { width: 157px; height: 60px; background: #009DF0; border: 0px; color: #FFFFFF; font-size: 18px;
+                                                            font-family: 'GothamRounded-Book'; border-radius: 4px; cursor: pointer; } }
+                                                            <br> .btn_cta { background-color: $background-color_1 !important; height: 72px !important; width: 203px !important; border-radius: 5px !important; }
+                                                            <br> .btn_cta_hover { background-color: $background-color_1 !important; height: 72px !important; width: 203px !important; border-radius: 5px !important; &:hover { background-color: $background-color_2
+                                                            !important; } }
+                                                            <br> .btn_cta_focs { background-color: $background-color_1 !important; height: 72px !important; width: 203px !important; border-radius: 5px !important; &:focus { border: 1px solid #e4a68b !important;
+                                                            outline: 2px solid #e4a68b; padding: 15px 20px; } }
+                                                        </p>
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Contact section </h2>
+
+
+
+
+
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                            veniam! Quidem, illum.</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </aside>
+                                    </main_5>
+                                </section>
+
+                                <!-- section2 content end -->
+
+                                <!-- section3 content -->
+                                <section>
+                                    <h2>Usage</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text_usage">
+                                            Button States Usage Guidelines
+                                        </div>
+
+                                        <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                                            <li>1) Place Call To Action Button easy to find so that it stands out from other links. Keep it above the fold</li>
+                                            <li>2) Use action oriented words like Sign Up, Take a free Trail. The words should not be more than five.</li>
+
+
+                                        </ul>
+
+
+
+
+                                    </div>
+
+                                    <div class="container_do">
+
+                                        <div class="layout">
+                                            <p class="col col-main">
+                                                <strong>Do</strong><br>
+
+                                            </p>
+                                            <p class="col_1 col-complementary" role="complementary">
+                                                <strong>Don't</strong><br>
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="container_text_layout">
+
+                                        <div class="layout_text_ramb">
+                                            <p class="col_ramb col-main_ramb">
+                                                Represent the Call to Action Button in the right place and it should be focused upfront.<br>
+
+                                            </p>
+                                            <p class="col_ramb col-complementary_ramb" role="complementary">
+                                                The Call to Action Button should not be in out of focus and like a Secondary Action.<br>
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="container_text_layout_1">
+
+                                        <div class="layout_text_ramb">
+                                            <p class="col_ramb col-main_ramb">
+                                                Represent the Primary action button easy to access and consistent across.<br>
+
+                                            </p>
+                                            <p class="col_ramb col-complementary_ramb" role="complementary">
+                                                Avoid using different types of button in a single context.<br>
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                </section>
+                                <!-- section3 content end -->
+
+                                <!-- section4 content start -->
+                                <section>
+                                    <h2>Best Practices</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                                <!-- section4 content end -->
+                            </div>
+                        </div>
+
+                    </section_3>
+                    <section_3 id="endpoints--cities-overview">
+                        <h2 class="secd_action_btn">Button Progress</h2>
+                        <!-- Button progress main sliding start -->
+                        <div class="tabs_new_slide_4">
+
+                            <input type="radio" id="tab17" name="tab-control_4" checked>
+                            <input type="radio" id="tab18" name="tab-control_4">
+                            <input type="radio" id="tab19" name="tab-control_4">
+                            <input type="radio" id="tab20" name="tab-control_4">
+                            <ul>
+                                <li title="Design"><label for="tab17" role="button"><br><span>Design</span></label></li>
+                                <li title="Code"><label for="tab18" role="button"> <br><span>Code</span></label></li>
+                                <li title="Usage"><label for="tab19" role="button"><br><span>Usage</span></label></li>
+                                <li title="Best Practices"><label for="tab20" role="button"><br><span>Best Practices</span></label></li>
+                            </ul>
+
+                            <div class="slider">
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content">
+                                <!-- section1 content -->
+                                <section>
+                                    <h2>Design</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text">
+                                            Progress Button
+                                        </div>
+                                        <p>The Progress action shoud have a stronger visual weight</p>
+                                        <div class="image_primary_btn">
+                                            <img src="assets/primary_btn.png" alt="primary_btn">
+                                            <p class="prim_btn_text">Progress Button Style</p>
+                                        </div>
+
+
+
+                                    </div>
+                                </section>
+                                <!-- section1 content end -->
+
+                                <!-- section2 content -->
+                                <section>
+                                    <h2>Code</h2>
+                                    <main_4 class="flex-container">
+
+                                        <section_6 class="main-content blue">
+                                            <h2>Output</h2>
+
+                                            <div class="button_primary_name">
+                                                <p>Default</p>
+
+
+
+                                            </div>
+                                            <div class="button_primary_ramb">
+                                                <button class="btn_progress"><img src="assets/btn_progress.svg"/>&nbsp;Sending</button>
+
+
+
+                                            </div>
+
+
+
+                                        </section_6>
+                                    </main_4>
+                                    <main_5 class="flex-container_5">
+                                        <aside class="sidebar_content_5 green">
+                                            <div class="tabs_new_4" id="style-6">
+                                                <div class="tab-header4_new">
+                                                    <div class="active_8_new">
+                                                        <i class="fas fa-code"></i> HTML
+                                                    </div>
+
+
+
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-server"></i> REACT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-indicator4_new">
+
+                                                </div>
+                                                <div class="tab-body4_new">
+                                                    <div class="active_8_new">
+                                                        <h2>This is code section </h2>
+
+                                                        <div id="content_1_tab">
+                                                            &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;/div&gt;
+
+
+
+                                                            <br> &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_progress&quot;&gt;&lt;img src=&quot;assets/btn_progress.svg&quot;/&gt;&amp;nbsp;Sending&lt;/button&gt;<br>                                                            &lt;/div&gt;
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                    <div>
+                                                        <h2>This is React section </h2>
+
+
+                                                        <p>
+                                                            import React from 'react'<br> import './progress.css' <br> export const Progress = () => {<br> return (
+                                                            < div>
+                                                                &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                                <br> &lt;/div&gt;
+
+
+
+                                                                <br> &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_progress&quot;&gt;&lt;img src=&quot;assets/btn_progress.svg&quot;/&gt;&amp;nbsp;Sending&lt;/button&gt;<br>                                                                &lt;/div&gt;
+                                                                < / div>
+                                                                    ) } export default Progress
+                                                        </p>
+
+
+
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is CSS section </h2>
+                                                        <p>
+                                                            import { Component, OnInit } from '@angular/core';<br> @Component({
+
+                                                            <br> selector: 'app-progress',<br> templateUrl: './progress.component.html',<br> styleUrls: ['./progress.component.scss']<br> }) export class ProgressComponent implements OnInit {<br> constructor()
+                                                            { }<br> ngOnInit(): void { } }<br> &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;/div&gt;
+
+
+
+                                                            <br> &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_progress&quot;&gt;&lt;img src=&quot;assets/btn_progress.svg&quot;/&gt;&amp;nbsp;Sending&lt;/button&gt;<br>                                                            &lt;/div&gt;
+
+
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Service section </h2>
+
+                                                        <p>
+                                                            $color_1: #797766;<br> $font-family_1: 'GothamRounded-Book';<br> .button_primary_name { display: flex; justify-content: space-around; margin-top: 3%;
+                                                            <br>>p { font-family: $font-family_1; font-style: normal; font-weight: 325; font-size: 20px; line-height: 24px; color: $color_1; } }
+                                                            <br> .button_primary_ramb { display: flex; justify-content: space-around; margin-top: 2%;
+                                                            <br>>button { width: 157px; height: 60px; background: #009DF0; border: 0px; color: #FFFFFF; font-size: 18px; font-family: 'GothamRounded-Book'; border-radius: 4px; cursor: pointer; } }
+                                                            <br> .btn_progress { height: 60px !important; width: 218px !important; display: flex; padding-top: 17px; padding-left: 52px; font-size: 20px !important; }
+                                                            <br> .img_prog { padding-right: 10px; }
+                                                        </p>
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Contact section </h2>
+
+
+
+
+
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                            veniam! Quidem, illum.</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </aside>
+                                    </main_5>
+                                </section>
+
+                                <!-- section2 content end -->
+
+                                <!-- section3 content -->
+                                <section>
+                                    <h2>Usage</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text_usage">
+                                            Button Progress Usage Guidelines
+                                        </div>
+
+                                        <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                                            <li>1) When we show the progress of the action in button make sure the text<br> is descriptive enough to let the user know what he/she can expect next.<br>Example- Submit button will transform to Submitting (Logging
+                                                In, Adding to cart,<br> Sending, Paying, Scanning etc.,) with progress icon likewise.</li>
+                                            <li>2) Follow the consistency when we used this progress button at one place it should reflect throughout the application.</li>
+
+
+                                        </ul>
+
+
+
+
+                                    </div>
+
+                                    <div class="container_do">
+
+                                        <div class="layout">
+                                            <p class="col col-main">
+                                                <strong>Do</strong><br>
+
+                                            </p>
+                                            <p class="col_1 col-complementary" role="complementary">
+                                                <strong>Don't</strong><br>
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </section>
+                                <!-- section3 content end -->
+
+                                <!-- section4 content start -->
+                                <section>
+                                    <h2>Best Practices</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                                <!-- section4 content end -->
+                            </div>
+                        </div>
+
+
+                    </section_3>
+                    <section_3 id="endpoints--city-detail">
+                        <h2 class="secd_action_btn">Button Split</h2>
+                        <!--- button split code start   -->
+                        <div class="tabs_new_slide_6">
+
+                            <input type="radio" id="tab25" name="tab-control_6" checked>
+                            <input type="radio" id="tab26" name="tab-control_6">
+                            <input type="radio" id="tab27" name="tab-control_6">
+                            <input type="radio" id="tab28" name="tab-control_6">
+                            <ul>
+                                <li title="Design"><label for="tab25" role="button"><br><span>Design</span></label></li>
+                                <li title="Code"><label for="tab26" role="button"> <br><span>Code</span></label></li>
+                                <li title="Usage"><label for="tab27" role="button"><br><span>Usage</span></label></li>
+                                <li title="Best Practices"><label for="tab28" role="button"><br><span>Best Practices</span></label></li>
+                            </ul>
+
+                            <div class="slider">
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content">
+                                <!-- section1 content -->
+                                <section>
+                                    <h2>Design</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text">
+                                            Button Split
+                                        </div>
+                                        <p>The Button Split shoud have a stronger visual weight</p>
+                                        <div class="image_primary_btn">
+                                            <img src="assets/primary_btn.png" alt="primary_btn">
+                                            <p class="prim_btn_text">Split Button Style</p>
+                                        </div>
+
+
+
+                                    </div>
+                                </section>
+                                <!-- section1 content end -->
+
+                                <!-- section2 content -->
+                                <section>
+                                    <h2>Code</h2>
+                                    <main_4 class="flex-container">
+
+                                        <section_6 class="main-content blue">
+                                            <h2>Output</h2>
+
+                                            <div class="button_primary_name">
+                                                <p>Default</p>
+                                                <p>Hover</p>
+
+
+
+                                            </div>
+                                            <div class="button_primary_ramb">
+
+
+                                                <div class="split-btn">
+                                                    <button class="primary-btn">button</button>
+                                                    <div class="dropdown-container">
+                                                        <button class="secondary-btn">
+                                                        <i class="fas fa-chevron-down"></i>
+                                                      </button>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="split-btn new_btn">
+                                                    <button class="primary-btn">button</button>
+                                                    <div class="dropdown-container">
+                                                        <button class="secondary-btn">
+                                                        <i class="fas fa-chevron-down"></i>
+                                                      </button>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+
+
+
+                                        </section_6>
+                                    </main_4>
+                                    <main_5 class="flex-container_5">
+                                        <aside class="sidebar_content_5 green">
+                                            <div class="tabs_new_6" id="style-6">
+                                                <div class="tab-header6_new">
+                                                    <div class="active_10_new">
+                                                        <i class="fas fa-code"></i> HTML
+                                                    </div>
+
+
+
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-server"></i> REACT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                    </div>
+
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-indicator6_new">
+
+                                                </div>
+                                                <div class="tab-body6_new">
+                                                    <div class="active_10_new">
+                                                        <h2>This is code section </h2>
+
+                                                        <div id="content_1_tab">
+                                                            &lt;div class=&quot;split-btn&quot;&gt;<br> &lt;button class=&quot;primary-btn&quot;&gt;button&lt;/button&gt;<br> &lt;div class=&quot;dropdown-container&quot;&gt;<br> &lt;button class=&quot;secondary-btn&quot;&gt;<br>                                                            &lt;i class=&quot;fas fa-chevron-down&quot;&gt;&lt;/i&gt;<br> &lt;/button&gt;
+                                                            <br> &lt;/div&gt;
+
+                                                            <br> &lt;/div&gt; &lt;div class=&quot;split-btn new_btn&quot;&gt;<br> &lt;button class=&quot;primary-btn&quot;&gt;button&lt;/button&gt;<br> &lt;div class=&quot;dropdown-container&quot;&gt;<br>                                                            &lt;button class=&quot;secondary-btn&quot;&gt;<br> &lt;i class=&quot;fas fa-chevron-down&quot;&gt;&lt;/i&gt;<br> &lt;/button&gt;
+                                                            <br> &lt;/div&gt; &lt;/div&gt;
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                    <div>
+                                                        <h2>This is React section </h2>
+
+
+                                                        import React from 'react'<br> import './split.css'<br> import split from './img/btn_Split.svg';<br> export const Split = () => {<br> return (<br> &lt;div className=&quot;split-btn&quot;&gt;<br> &lt;button
+                                                        className=&quot;primary-btn&quot;&gt;button&lt;/button&gt;
+                                                        <br> &lt;div className=&quot;dropdown-container&quot;&gt;<br> &lt;button className=&quot;secondary-btn&quot;&gt;<br> &lt;i className=&quot;fas fa-chevron-down&quot;&gt;&lt;/i&gt;
+                                                        <br> &lt;/button&gt;
+                                                        <br> &lt;/div&gt; &lt;/div&gt; &lt;div className=&quot;split-btn new_btn&quot;&gt;<br> &lt;button className=&quot;primary-btn&quot;&gt;button&lt;/button&gt;<br> &lt;div className=&quot;dropdown-container&quot;&gt;<br>                                                        &lt;button className=&quot;secondary-btn&quot;&gt;<br> &lt;i className=&quot;fas fa-chevron-down&quot;&gt;&lt;/i&gt;<br> &lt;/button&gt;
+                                                        <br> &lt;/div&gt; &lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Angular section </h2>
+                                                        <p>
+                                                            import { Component, OnInit } from '@angular/core';<br> @Component({ selector: 'app-split', templateUrl: './split.component.html', styleUrls: ['./split.component.scss'] })
+                                                            <br> export class SplitComponent implements OnInit {<br> constructor() { } ngOnInit(): void {<br> } }
+
+                                                            <br> &lt;div class=&quot;split-btn&quot;&gt;<br> &lt;button class=&quot;primary-btn&quot;&gt;button&lt;/button&gt;<br> &lt;div class=&quot;dropdown-container&quot;&gt;<br> &lt;button class=&quot;secondary-btn&quot;&gt;<br>                                                            &lt;i class=&quot;fas fa-chevron-down&quot;&gt;&lt;/i&gt;<br> &lt;/button&gt;
+                                                            <br> &lt;/div&gt;
+
+                                                            <br> &lt;/div&gt; &lt;div class=&quot;split-btn new_btn&quot;&gt;<br> &lt;button class=&quot;primary-btn&quot;&gt;button&lt;/button&gt;<br> &lt;div class=&quot;dropdown-container&quot;&gt;<br>                                                            &lt;button class=&quot;secondary-btn&quot;&gt;<br> &lt;i class=&quot;fas fa-chevron-down&quot;&gt;&lt;/i&gt;<br> &lt;/button&gt;
+                                                            <br> &lt;/div&gt; &lt;/div&gt;
+
+
+
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Scss section </h2>
+
+                                                        $color_1: #fff; $color_2: #ff7a00;<br> $font-family_1: GothamRounded-Book; $background-color_1: #009DF0; $background-color_2: #fff; $background-color_3: #33B1F3;<br> .split-btn { display: flex;
+                                                        <br>button { background-color: $background-color_1; width: 218px; height: 56px; border: none; color: $color_1; cursor: pointer; font-size: 24px; text-transform: capitalize; font-family: $font-family_1;
+                                                        } }
+                                                        <br> .primary-btn { padding: 15px 30px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+
+                                                        <br> .dropdown-container { position: relative; .secondary-btn { height: 100%; padding: 0 15px; border-left: 1px solid; border-top-right-radius: 10px; border-bottom-right-radius: 10px; width: 100%;
+                                                        }
+                                                        <br> &:hover { .dropdown-content { opacity: 1; pointer-events: all; } } }
+                                                        <br> .dropdown-content { background-color: $background-color_2; padding: 20px 60px 20px 20px; position: absolute; border-radius: 5px; opacity: 0; pointer-events: none; transition: all 0.3s;
+                                                        <br> a { display: block; text-decoration: none; font-family: $font-family_2; color: $color_2; white-space: nowrap; transition: transform 0.3s; &:not(:last-child) { margin-bottom: 20px; } &:hover
+                                                        { transform: translateX(10px); } } }
+                                                        <br> .new_btn { .secondary-btn { &:hover { background-color: $background-color_3; } } }
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Contact section </h2>
+
+
+
+
+
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                            veniam! Quidem, illum.</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </aside>
+                                    </main_5>
+                                </section>
+
+                                <!-- section2 content end -->
+
+                                <!-- section3 content -->
+                                <section>
+                                    <h2>Usage</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text_usage">
+                                            Button Split Usage Guidelines
+                                        </div>
+
+                                        <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                                            <li>1) Always use text labels for split button, give a descriptive text label for default option.</li>
+                                            <li>2) Avoid submenus within split buttons when there are more tools needs to be shown.</li>
+                                            <li>3) Do not use split buttons for navigation menus on websites/applications.</li>
+
+
+                                        </ul>
+
+
+
+
+                                    </div>
+
+                                    <div class="container_do">
+
+                                        <div class="layout">
+                                            <p class="col col-main">
+                                                <strong>Do</strong><br>
+
+                                            </p>
+                                            <p class="col_1 col-complementary" role="complementary">
+                                                <strong>Don't</strong><br>
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </section>
+                                <!-- section3 content end -->
+
+                                <!-- section4 content start -->
+                                <section>
+                                    <h2>Best Practices</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                                <!-- section4 content end -->
+                            </div>
+                        </div>
+
+
+                        <!-- button split code end--->
+
+                        <!-- <p>…</p> -->
+                    </section_3>
+                    <section_3 id="endpoints--city-config">
+                        <h2 class="secd_action_btn">Button Icon</h2>
+
+                        <!-- Buttton icon main code start-->
+                        <div class="tabs_new_slide_5">
+
+                            <input type="radio" id="tab21" name="tab-control_5" checked>
+                            <input type="radio" id="tab22" name="tab-control_5">
+                            <input type="radio" id="tab23" name="tab-control_5">
+                            <input type="radio" id="tab24" name="tab-control_5">
+                            <ul>
+                                <li title="Design"><label for="tab21" role="button"><br><span>Design</span></label></li>
+                                <li title="Code"><label for="tab22" role="button"> <br><span>Code</span></label></li>
+                                <li title="Usage"><label for="tab23" role="button"><br><span>Usage</span></label></li>
+                                <li title="Best Practices"><label for="tab24" role="button"><br><span>Best Practices</span></label></li>
+                            </ul>
+
+                            <div class="slider">
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content">
+                                <!-- section1 content -->
+                                <section>
+                                    <h2>Design</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text">
+                                            Button Icon
+                                        </div>
+                                        <p>The Button Icon shoud have a stronger visual weight</p>
+                                        <div class="image_primary_btn">
+                                            <img src="assets/primary_btn.png" alt="primary_btn">
+                                            <p class="prim_btn_text">Icon Button Style</p>
+                                        </div>
+
+
+
+                                    </div>
+                                </section>
+                                <!-- section1 content end -->
+
+                                <!-- section2 content -->
+                                <section>
+                                    <h2>Code</h2>
+                                    <main_4 class="flex-container">
+
+                                        <section_6 class="main-content blue">
+                                            <h2>Output</h2>
+
+                                            <div class="button_primary_name">
+                                                <p>Default</p>
+                                                <p>Icon</p>
+
+
+
+                                            </div>
+                                            <div class="button_primary_ramb">
+
+                                                <button class="btn_icon_ramb"><img class="btn-icon_ramb_img" src="assets/btn-icon_new.svg"/><span>Send Mail</span></button>
+                                                <button class="btn_icon_send"><img src="assets/btn-icon_new.svg"/></button>
+
+
+                                            </div>
+
+
+
+                                        </section_6>
+                                    </main_4>
+                                    <main_5 class="flex-container_5">
+                                        <aside class="sidebar_content_5 green">
+                                            <div class="tabs_new_5" id="style-6">
+                                                <div class="tab-header5_new">
+                                                    <div class="active_9_new">
+                                                        <i class="fas fa-code"></i> HTML
+                                                    </div>
+
+
+
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-to-square"></i> JAVASCRIPT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-server"></i> REACT
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-address-book"></i> ANGULAR
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-pen-clip"></i> SCSS
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-indicator5_new">
+
+                                                </div>
+                                                <div class="tab-body5_new">
+                                                    <div class="active_9_new">
+                                                        <h2>This is code section </h2>
+
+                                                        <div id="content_1_tab">
+                                                            &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;p&gt;Icon&lt;/p&gt;
+                                                            <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_icon_ramb&quot;&gt;&lt;img class=&quot;btn-icon_ramb_img&quot; src=&quot;assets/btn-icon_new.svg&quot;/&gt;&lt;span&gt;Send
+                                                            Mail&lt;/span&gt;&lt;/button&gt;
+                                                            <br> &lt;button class=&quot;btn_icon_send&quot;&gt;&lt;img src=&quot;assets/btn-icon_new.svg&quot;/&gt;&lt;/button&gt; &lt;/div&gt;
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                    <div>
+                                                        <h2>This is CSS section </h2>
+
+
+                                                        import React from 'react'<br> import './icon_btn.css'<br> export const Icon = () => {<br> return ( <br>
+                                                        < div>
+
+                                                            &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;p&gt;Icon&lt;/p&gt;
+                                                            <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_icon_ramb&quot;&gt;&lt;img class=&quot;btn-icon_ramb_img&quot; src=&quot;assets/btn-icon_new.svg&quot;/&gt;&lt;span&gt;Send
+                                                            Mail&lt;/span&gt;&lt;/button&gt;
+                                                            <br> &lt;button class=&quot;btn_icon_send&quot;&gt;&lt;img src=&quot;assets/btn-icon_new.svg&quot;/&gt;&lt;/button&gt; &lt;/div&gt;
+
+                                                            < /div>
+                                                                ) }
+
+
+
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is CSS section </h2>
+                                                        <p>
+                                                            import { Component, OnInit } from '@angular/core';<br> @Component({
+
+                                                            <br> selector: 'app-icon-btn',<br> templateUrl: './icon-btn.component.html',<br> styleUrls: ['./icon-btn.component.scss']<br> }) export class IconBtnComponent implements OnInit {<br> constructor()
+                                                            { }<br> ngOnInit(): void { } }<br> &lt;div class=&quot;button_primary_name&quot;&gt;<br> &lt;p&gt;Default&lt;/p&gt;
+                                                            <br> &lt;p&gt;Icon&lt;/p&gt;
+                                                            <br> &lt;/div&gt; &lt;div class=&quot;button_primary_ramb&quot;&gt;<br> &lt;button class=&quot;btn_icon_ramb&quot;&gt;&lt;img class=&quot;btn-icon_ramb_img&quot; src=&quot;assets/btn-icon_new.svg&quot;/&gt;&lt;span&gt;Send
+                                                            Mail&lt;/span&gt;&lt;/button&gt;
+                                                            <br> &lt;button class=&quot;btn_icon_send&quot;&gt;&lt;img src=&quot;assets/btn-icon_new.svg&quot;/&gt;&lt;/button&gt; &lt;/div&gt;
+
+
+
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Scss section </h2>
+                                                        $color_1: #797766;<br> $font-family_1: 'GothamRounded-Book';<br> .button_primary_name { display: flex; justify-content: space-around; margin-top: 3%;
+                                                        <br>>p { font-family: $font-family_1; font-style: normal; font-weight: 325; font-size: 20px; line-height: 24px; color: $color_1; } }
+                                                        <br> .button_primary_ramb { display: flex; justify-content: space-around; margin-top: 2%; >button { width: 157px; height: 60px; background: #009DF0; border: 0px; color: #FFFFFF; font-size: 18px;
+                                                        font-family: 'GothamRounded-Book'; border-radius: 4px; cursor: pointer; } }
+                                                        <br> .btn_icon_ramb { width: 218px !important; height: 60px !important; display: flex; padding-left: 45px; padding-top: 17px; >span { padding-right: 10px; } }
+                                                        <br> .btn-icon_ramb_img { padding-right: 12px; }
+                                                        <br> .btn_icon_send { width: 72px !important; height: 60px !important; margin-right: 35px; }
+
+
+                                                    </div>
+                                                    <div>
+                                                        <h2>This is Contact section </h2>
+
+
+
+
+
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse ipsa laboriosam deserunt distinctio aut ullam tenetur eaque atque ea, omnis necessitatibus similique corporis autem beatae aspernatur
+                                                            veniam! Quidem, illum.</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </aside>
+                                    </main_5>
+                                </section>
+
+                                <!-- section2 content end -->
+
+                                <!-- section3 content -->
+                                <section>
+                                    <h2>Usage</h2>
+                                    <div class="tab-content_new">
+                                        <div class="tabs_design_text_usage">
+                                            Primary Button Usage Guidelines
+                                        </div>
+                                        <p class="inner_text_usage">You can give some usage examples</p>
+
+
+
+
+                                    </div>
+
+                                    <div class="container_do">
+
+                                        <div class="layout">
+                                            <p class="col col-main">
+                                                <strong>Do</strong><br>
+
+                                            </p>
+                                            <p class="col_1 col-complementary" role="complementary">
+                                                <strong>Don't</strong><br>
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </section>
+                                <!-- section3 content end -->
+
+                                <!-- section4 content start -->
+                                <section>
+                                    <h2>Best Practices</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+                                <!-- section4 content end -->
+                            </div>
+                        </div>
+
+                        <!-- Button icon main code end -->
+                        <!-- <p>…</p> -->
+                    </section_3>
+                    <section_3 id="endpoints--city-spots-overview ">
+                        <h2 class="secd_action_btn">Accessibility:</h2>
+                        <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                            <li>1) Button can be triggered by clicking left click on the mouse and by pressing enter and spacebar in the keyboard.</li>
+                            <li>2) Differentiating button on different states. Ex: what happens on selecting the button, (Hovering, Active state, Focusing).</li>
+                            <li>3) Make text of the button where the user can easily understand the action which is going to be taken. Ex: Use Submit rather than Ok.</li>
+                            <li>4) Touch target of the button should be consistent in way that the user can use the button.</li>
+                            <li>5) Ex: Use the spacing consistent for icon buttons when we have more actions next to each other.</li>
+
+
+                        </ul>
+                        <!-- <p>…</p>-->
+                    </section_3>
+                    <section_3 id="endpoints--city-spot-detail ">
+                        <h2 class="secd_action_btn">Best Practices:</h2>
+                        <ul class="usage_text" style="display: block;white-space: nowrap;text-align: justify;line-height: 2;padding-top: 0px;">
+                            <li>1) Wherever the component is used, always place the primary button on the right and the secondary button to the left of it.</li>
+                            <li>2) The text and the icon should be aligned in center of the button.</li>
+                            <li>3) Use only one primary button to a screen. Using multiple primary buttons will lead the user to confuse about action.</li>
+                            <li>4) Primary, secondary, and tertiary buttons should be differentiated visually.</li>
+                            <li>5) Pay attention on the size of the button when it scale to smaller devices like tablet, smartphone devices.</li>
+
+
+                        </ul>
+                    </section_3>
+                    <section_3 id="endpoints--city-icons-overview ">
+                        <!-- <h3>Small</h3>
+                        <p>…</p> -->
+                        </section_#>
+                        <section_3 id="endpoints--city-icon-detail ">
+                            <!-- <h3>Call to action</h3>
+                            <p>…</p> -->
+                        </section_3>
+                    </section_3>
+                    <section_3 id="links ">
+                        <!-- <h2>Progress</h2>
+                        <p>…</p> -->
+                    </section_3>
+                    <section_3 id="expanders ">
+                        <!-- <h2>Router Link</h2>
+                        <p>…</p> -->
+                    </section_3>
+                    <section id="filters ">
+                        <!-- <h2>CSS Variables</h2>
+                        <p>…</p> -->
+                </section_3>
+            </div>
+            <nav_1 class="section-nav1 ">
+                <ol style="list-style: none; ">
+                    <li><a href="#introduction ">Primary Action Button</a></li><br>
+                    <li><a href="#request-response ">Secondary Action Button</a></li><br>
+                    <li><a href="#authentication ">Floating Action Button</a></li><br>
+                    <li><a href="#endpoints ">Button States</a><br>
+                        <li class=" "><a href="#endpoints--cities-overview">Button Progress</a></li><br>
+                        <li class=" "><a href="#endpoints--city-detail">Button Split</a></li><br>
+                        <li class=" "><a href="#endpoints--city-config">Button Icon</a></li><br>
+                        <!-- this hidden text is important for sliding vertical bar -->
+                        <!-- <ul>
+                            <li class=" "><a href="#endpoints--root ">Area Disbaled button with tooltip</a></li><br>
+                            <li class=" "><a href="#endpoints--cities-overview ">Area disbaled link as button with tooltip</a></li><br>
+                            <li class=" "><a href="#endpoints--city-detail ">Link as button</a></li><br>
+                            <li class=" "><a href="#endpoints--city-config ">Inine Link as span</a></li><br>
+                            <li class=" "><a href="#endpoints--city-spots-overview ">Block Level</a></li><br>
+                            <li class=" "><a href="#endpoints--city-spot-detail ">Types</a></li><br>
+                            <li class=" "><a href="#endpoints--city-icons-overview ">Small</a></li><br>
+                            <li class=" "><a href="#endpoints--city-icon-detail ">Call to Action</a></li><br>
+                        </ul> -->
+                    </li>
+                    <!-- <li class=" "><a href="#links ">Progress</a></li><br>
+                    <li class=" "><a href="#expanders ">Router Link</a></li><br>
+                    <li class=" "><a href="#filters ">CSS Variables</a></li><br> -->
+
+                    <!-- this hidden text is important for sliding vertical bar -->
+                </ol>
+            </nav_1>
+        </main_1>
+
+
+
+
+        <!--main content end-->
+
+        </section>
+
+
+        <script src="js/app.js "></script>
+
+        <script>
+            $(document).ready(function() {
+                var location = window.location.href;
+                $('#nav li a').each(function() {
+                    if (location.indexOf(this.href) > -1) {
+                        $(this).parent().addClass('active');
+                        $(this).parent().addClass('active-sub-link');
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var location1 = window.location.href;
+                $('.nav__item-link+ul a').each(function() {
+                    if (location1.indexOf(this.href) > -1) {
+                        $(this).parent().addClass('active-sub-link');
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        const id = entry.target.getAttribute('id');
+                        if (entry.intersectionRatio > 0) {
+                            document.querySelector(`nav_1 li a[href="#${id} "]`).parentElement.classList.add('active_2');
+                        } else {
+                            document.querySelector(`nav_1 li a[href="#${id} "]`).parentElement.classList.remove('active_2');
+                        }
+                    });
+                });
+
+                // Track all sections that have an `id` applied
+                document.querySelectorAll('section_3[id]').forEach((section_3) => {
+                    observer.observe(section_3);
+                });
+
+            });
+        </script>
+
+        <script>
+            let tabHeader2 = document.getElementsByClassName("tab-header1")[0];
+            let tabIndicator2 = document.getElementsByClassName("tab-indicator1")[0];
+            let tabBody2 = document.getElementsByClassName("tab-body1")[0];
+
+            let tabsPane2 = tabHeader2.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane2.length; i++) {
+                tabsPane2[i].addEventListener("click", function() {
+                    tabHeader2.getElementsByClassName("active_5")[0].classList.remove("active_5");
+                    tabsPane2[i].classList.add("active_5")
+                    tabBody2.getElementsByClassName("active_5")[0].classList.remove("active_5");
+                    tabBody2.getElementsByTagName("div")[i].classList.add("active_5");
+
+                    tabIndicator2.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            let tabHeader3 = document.getElementsByClassName("tab-header1_new")[0];
+            let tabIndicator3 = document.getElementsByClassName("tab-indicator1_new")[0];
+            let tabBody3 = document.getElementsByClassName("tab-body1_new")[0];
+
+            let tabsPane3 = tabHeader3.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane3.length; i++) {
+                tabsPane3[i].addEventListener("click", function() {
+                    tabHeader3.getElementsByClassName("active_5_new")[0].classList.remove("active_5_new");
+                    tabsPane3[i].classList.add("active_5_new")
+                    tabBody3.getElementsByClassName("active_5_new")[0].classList.remove("active_5_new");
+                    tabBody3.getElementsByTagName("div")[i].classList.add("active_5_new");
+
+                    tabIndicator3.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            let tabHeader4 = document.getElementsByClassName("tab-header2_new")[0];
+            let tabIndicator4 = document.getElementsByClassName("tab-indicator2_new")[0];
+            let tabBody4 = document.getElementsByClassName("tab-body2_new")[0];
+
+            let tabsPane4 = tabHeader4.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane4.length; i++) {
+                tabsPane4[i].addEventListener("click", function() {
+                    tabHeader4.getElementsByClassName("active_6_new")[0].classList.remove("active_6_new");
+                    tabsPane4[i].classList.add("active_6_new")
+                    tabBody4.getElementsByClassName("active_6_new")[0].classList.remove("active_6_new");
+                    tabBody4.getElementsByTagName("div")[i].classList.add("active_6_new");
+
+                    tabIndicator4.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            let tabHeader5 = document.getElementsByClassName("tab-header3_new")[0];
+            let tabIndicator5 = document.getElementsByClassName("tab-indicator3_new")[0];
+            let tabBody5 = document.getElementsByClassName("tab-body3_new")[0];
+
+            let tabsPane5 = tabHeader5.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane5.length; i++) {
+                tabsPane5[i].addEventListener("click", function() {
+                    tabHeader5.getElementsByClassName("active_7_new")[0].classList.remove("active_7_new");
+                    tabsPane5[i].classList.add("active_7_new")
+                    tabBody5.getElementsByClassName("active_7_new")[0].classList.remove("active_7_new");
+                    tabBody5.getElementsByTagName("div")[i].classList.add("active_7_new");
+
+                    tabIndicator5.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            let tabHeader6 = document.getElementsByClassName("tab-header4_new")[0];
+            let tabIndicator6 = document.getElementsByClassName("tab-indicator4_new")[0];
+            let tabBody6 = document.getElementsByClassName("tab-body4_new")[0];
+
+            let tabsPane6 = tabHeader6.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane6.length; i++) {
+                tabsPane6[i].addEventListener("click", function() {
+                    tabHeader6.getElementsByClassName("active_8_new")[0].classList.remove("active_8_new");
+                    tabsPane6[i].classList.add("active_8_new")
+                    tabBody6.getElementsByClassName("active_8_new")[0].classList.remove("active_8_new");
+                    tabBody6.getElementsByTagName("div")[i].classList.add("active_8_new");
+
+                    tabIndicator6.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            let tabHeader7 = document.getElementsByClassName("tab-header5_new")[0];
+            let tabIndicator7 = document.getElementsByClassName("tab-indicator5_new")[0];
+            let tabBody7 = document.getElementsByClassName("tab-body5_new")[0];
+
+            let tabsPane7 = tabHeader7.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane7.length; i++) {
+                tabsPane7[i].addEventListener("click", function() {
+                    tabHeader7.getElementsByClassName("active_9_new")[0].classList.remove("active_9_new");
+                    tabsPane7[i].classList.add("active_9_new")
+                    tabBody7.getElementsByClassName("active_9_new")[0].classList.remove("active_9_new");
+                    tabBody7.getElementsByTagName("div")[i].classList.add("active_9_new");
+
+                    tabIndicator7.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            let tabHeader8 = document.getElementsByClassName("tab-header6_new")[0];
+            let tabIndicator8 = document.getElementsByClassName("tab-indicator6_new")[0];
+            let tabBody8 = document.getElementsByClassName("tab-body6_new")[0];
+
+            let tabsPane8 = tabHeader8.getElementsByTagName("div");
+
+
+
+            for (let i = 0; i < tabsPane8.length; i++) {
+                tabsPane8[i].addEventListener("click", function() {
+                    tabHeader8.getElementsByClassName("active_10_new")[0].classList.remove("active_10_new");
+                    tabsPane8[i].classList.add("active_10_new")
+                    tabBody8.getElementsByClassName("active_10_new")[0].classList.remove("active_10_new");
+                    tabBody8.getElementsByTagName("div")[i].classList.add("active_10_new");
+
+                    tabIndicator8.style.left = `calc(calc(100% / 5) * ${i})`;
+                })
+            }
+        </script>
+
+        <script>
+            function myIcon(x) {
+                x.classList.toggle("fa-angle-up ")
+            }
+        </script>
+
+
+
+</body>
+
+</html>

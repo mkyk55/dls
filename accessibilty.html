@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/gothamfont.css">
+    <link rel="stylesheet" href="css/accessibilty.css" />
+    <script src="https://kit.fontawesome.com/24ced5e92c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Design Language System</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <i class="fas fa-bars" id="nav-toggler"></i>
+        <div>
+            <i class="fas fa-user-alt"></i>
+            <span>John Doe</span>
+        </div>
+
+    </header>
+
+    <nav id="nav">
+        <div>
+            <div class="logo">
+
+                <span><img src="assets/logo_new.png" alt="loog_ramboll" class="logo_ramb"></span>
+            </div>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="/principle.html" class="nav__item-link">
+
+                        <span>Principles</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/accessibilty.html" class="nav__item-link active">
+
+                        <span>Accessibilty</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>Visual Elements &nbsp;<i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+                        <!-- <li>
+                            <a href="button.html" class="sub_link">Button</a>
+                        </li> -->
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>Components &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+
+                        <li>
+                            <a href="button.html" class="sub_link">Button</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>Layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+
+                        <span>UX Writing</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link ">
+
+                        <span>Resources</span>
+                    </a>
+                </li>
+                <!-- <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Settings</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+        <a href="#" class="sign-out">
+
+            <span>Version 1.1</span>
+        </a>
+    </nav>
+    <section class="home-section">
+        <div class="home-content">
+            <!-- <i class='bx bx-menu'></i> -->
+            <!-- <span class="text">Drop Down Sidebar</span> -->
+        </div>
+        <div class="ramb_sidemenu">
+            <div class="ram_sidemenu_text">
+                <p class="btn_rambla">Accessibilty</p>
+            </div>
+
+        </div>
+
+        <!-- <p class="ex_rambla">Example</p> -->
+
+        <!-- main content    -->
+
+
+
+
+        <!--main content end-->
+    </section>
+
+    <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            var location = window.location.href;
+            $('#nav li a').each(function() {
+                if (location.indexOf(this.href) > -1) {
+                    $(this).parent().addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function myIcon(x) {
+            x.classList.toggle("fa-angle-up")
+        }
+    </script>
+</body>
+
+</html>

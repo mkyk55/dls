@@ -1,0 +1,21 @@
+/* FONTS */
+
+@font-face {
+    font-family: GothamRounded-Book;
+    src: url(./Fonts/gotham-rounded/GothamRounded-Book.otf);
+}
+
+@font-face {
+    font-family: GothamRounded-Medium;
+    src: url(./Fonts/gotham-rounded/GothamRounded-Medium.otf);
+}
+
+@font-face {
+    font-family: GothamRoundedBold;
+    src: url(./Fonts/gotham-rounded/GothamRoundedBold_21016.ttf);
+}
+
+@font-face {
+    font-family: GothamRoundedLight;
+    src: url(./Fonts/gotham-rounded/GothamRoundedLight_21020.ttf);
+}

@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: GothamRounded-Medium;
+    /* font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: inline-flex;
+    background: #ffffff;
+    color: white;
+    box-shadow: 1px 3px 4px #E6E6E6;
+    align-items: center;
+    z-index: 1;
+}
+
+.navigation {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.brand {
+    flex: 1;
+    margin: 0 25px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    color: black;
+}
+
+.menu li a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: GothamRounded-Book !important;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    text-decoration: underline #009CF0;
+    color: #009CF0;
+}
+
+.search {
+    position: relative;
+    padding-bottom: 15px;
+    bottom: -7px;
+}
+
+.search-input::placeholder {
+    color: black;
+    opacity: 0.8;
+}
+
+.search-input {
+    height: 50px;
+    border: none;
+    position: absolute;
+    left: -200px;
+    visibility: hidden;
+    opacity: 0;
+    top: 22px;
+    background: white;
+    color: black;
+    padding: 6px;
+    font-size: 12px;
+    outline: none;
+    width: 220px;
+    transition: 80ms all ease-in;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #009CF0;
+    box-shadow: none;
+}
+
+.search-button {
+    background: transparent;
+    color: #009CF0;
+    cursor: pointer;
+    font-size: 14px;
+    padding-top: 4px;
+    border: 1px;
+}
+
+.search-button:hover+.search-input,
+.search-input:hover,
+.search:hover .search-input {
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9 !important;
+    box-shadow: 1px 3px 4px #E6E6E6;
+    height: 25px !important;
+    /* color: black !important; */
+}
+
+
+/*   content css start  */
+
+.container_ramboll {
+    display: flex;
+    border: 1px solid #009DF0;
+    background-color: #009DF0;
+    height: 57vh;
+}
+
+
+/*   content css end   */
+
+
+/*   heading text start   */
+
+.heading_text>.heading_text_ramb {
+    margin: 0;
+    display: flex;
+    color: white;
+    top: 18%;
+    position: absolute;
+    font-size: 3vw;
+    font-family: 'GothamRounded-Book';
+    left: 3%;
+    font-weight: bold;
+}
+
+.heading_description_ramb {
+    margin: 0px;
+    top: 30%;
+    left: 3%;
+    position: absolute;
+    text-align: justify;
+    font-family: GothamRounded-Medium;
+    color: white;
+    width: 28%;
+    font-size: 1vw;
+    letter-spacing: 0px;
+    line-break: auto;
+}
+
+.heading_description_ramb_ano {
+    margin: 0px;
+    top: 42%;
+    left: 3%;
+    position: absolute;
+    text-align: justify;
+    font-family: GothamRounded-Medium;
+    color: white;
+    width: 28%;
+    font-size: 1vw;
+    letter-spacing: 0px;
+    line-break: auto;
+}
+
+
+/*    heading text end   */
+
+
+/*  grid design and code start */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    margin-top: 90px;
+    height: calc(100vh - 900px) !important;
+}
+
+.grid>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 89%;
+    height: 100%;
+}
+
+.grid>article img {
+    max-width: 100%;
+}
+
+.grid .text {
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'GothamRounded-Book';
+}
+
+.grid_cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+/*   grid design and code end   */
+
+
+/*  tabs sliding code start  */
+
+.container_tabsscroll {
+    width: 1142px;
+    position: absolute;
+    top: 125%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    /* box-shadow: 0 0 100px rgb(0 0 0 / 50%); */
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.container_tabsscroll input {
+    display: none;
+}
+
+.container_tabsscroll input:checked+label {
+    background: #eee;
+}
+
+.container_tabsscroll input#tab1:checked~.line {
+    left: 0%;
+}
+
+.container_tabsscroll input#tab1:checked~.content-container #c1 {
+    opacity: 1;
+}
+
+.container_tabsscroll input#tab2:checked~.line {
+    left: 25%;
+}
+
+.container_tabsscroll input#tab2:checked~.content-container #c2 {
+    opacity: 1;
+}
+
+.container_tabsscroll input#tab3:checked~.line {
+    left: 50%;
+}
+
+.container_tabsscroll input#tab3:checked~.content-container #c3 {
+    opacity: 1;
+}
+
+.container_tabsscroll input#tab4:checked~.line {
+    left: 75%;
+}
+
+.container_tabsscroll input#tab4:checked~.content-container #c4 {
+    opacity: 1;
+}
+
+.container_tabsscroll label {
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    width: 25%;
+    text-align: center;
+    background: #f4f4f4;
+    color: #555;
+    position: relative;
+    transition: 0.25s background ease;
+    cursor: pointer;
+}
+
+.container_tabsscroll label::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background: #ccc;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    transition: 0.25s ease;
+}
+
+.container_tabsscroll label:hover::after {
+    opacity: 1;
+}
+
+.container_tabsscroll .line {
+    position: absolute;
+    height: 2px;
+    background: #1e88e5;
+    width: 25%;
+    top: 34px;
+    left: 0;
+    transition: 0.25s ease;
+}
+
+.container_tabsscroll .content-container {
+    /* background: #eee; */
+    position: relative;
+    height: 100px;
+    font-size: 16px;
+    padding-bottom: 252px;
+}
+
+.container_tabsscroll .content-container .content {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    transition: 0.25s ease;
+    color: #333;
+}
+
+.container_tabsscroll .content-container .content h3 {
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.container_tabsscroll .content-container .content p {
+    margin: 10px 0;
+}
+
+.container_tabsscroll .content-container .content p,
+body .container .content-container .content i {
+    font-size: 13px;
+}
+
+
+/*  tabs sliding code end   */

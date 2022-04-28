@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/gothamfont.css">
+    <link rel="stylesheet" href="css/design_token.css" />
+    <script src="https://kit.fontawesome.com/24ced5e92c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Design Language System</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <i class="fas fa-bars" id="nav-toggler"></i>
+        <div>
+            <i class="fas fa-user-alt"></i>
+            <span>John Doe</span>
+        </div>
+
+    </header>
+
+    <nav id="nav">
+        <div>
+            <div class="logo">
+                <!-- <i class="fab fa-gg-circle"></i> -->
+                <span><img src="assets/logo_new.png" alt="loog_ramboll" class="logo_ramb"></span>
+            </div>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="/principle.html" class="nav__item-link">
+                        <!-- <i class="fab fa-bitcoin"></i> -->
+                        <span>Principles</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/accessibilty.html" class="nav__item-link">
+                        <!-- <i class="fab fa-bitcoin"></i> -->
+                        <span>Accessibilty</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <!-- <i class="fas fa-home"></i> -->
+                        <span>Visual Elements &nbsp;<i class="fas fa-angle-down" onclick="myIcon(this)" ></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <!-- <i class="fas fa-home"></i> -->
+                        <span>Components &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="d-none">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+
+                        <li>
+                            <a href="button.html" class="sub_link">Button</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="#" class="sub_link">Tokens</a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <!-- <i class="fas fa-home"></i> -->
+                        <span>Layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-angle-down" onclick="myIcon(this)"></i></span>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="#" class="sub_link">Brand Guideline</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Colors</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_link">Typography</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Icons</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Illustration</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="sub_link">Animations</a>
+                        </li>
+
+                        <li>
+                            <a href="design_token.html" class="sub_link active-sub-link">Tokens</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <!-- <i class="fab fa-bitcoin"></i> -->
+                        <span>UX Writing</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item-link ">
+                        <!-- <i class="fas fa-user-alt"></i> -->
+                        <span>Resources</span>
+                    </a>
+                </li>
+                <!-- <li class="nav__item">
+                    <a href="#" class="nav__item-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Settings</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+        <a href="#" class="sign-out">
+            <!-- <i class="fas fa-sign-out-alt"></i> -->
+            <span>Version 1.1</span>
+        </a>
+    </nav>
+    <section class="home-section">
+        <div class="home-content">
+            <!-- <i class='bx bx-menu'></i> -->
+            <!-- <span class="text">Drop Down Sidebar</span> -->
+        </div>
+        <div class="ramb_sidemenu">
+            <div class="ram_sidemenu_text">
+                <p class="btn_rambla">Design Tokens</p>
+            </div>
+
+
+
+        </div>
+        <div class="title-frame_ramb">
+            <div class="flex_text">
+                <div class="category">
+                    <div class="type-color_secondry">Resources</div>
+                </div>
+                <div class="title-heading_ramb">
+                    Introduction
+                </div>
+                <div class="title-description_ramb">
+                    Let's say a brand has a <b>Primary Pink</b> color. Designers and developers should refer to this color by the same name and identity, regardless of platform (design, web, mobile etc). If the color changes in design, it should also
+                    change on all development platforms automatically (and vice versa). <br><br> <b>Design tokens</b> enable this behavior by creating an <strong> abstract identity</strong> and centralizing the source of truth for this color. Because
+                    they help to establish a source of truth, they are often found in design systems. They can be used for colors, text styles, spacings, animation values etc.
+                </div>
+
+
+
+
+
+            </div>
+            <div class="principle_img">
+                <p class="tok_12_tok">Tokens</p>
+                <p>Get started by creating tokens linked with styles from your design files:</p>
+                <!-- <img src="assets/principle.png" alt="priciple" class="principle_img_type">
+                <p class="principle_text">Principles based on Sustainability theme</p> -->
+            </div>
+
+            <div class="token_ramb">
+                <p class="token_text">Cyan Family - Brand Recognition</p>
+                <p class="token_text_desc">The Cyan Family emphasis the Brand Recognition of Ramboll and used as the Primary Color in all of its Products.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token">
+
+                    </div><span class="color_token_name">#009DF0<br> rgb(0,157,240)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary Cyan Darkest<br><span class="token_desc_taks1">The Primary Cyan Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-cyan-darkest<br>var(--color-cyan-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token_1">
+
+                    </div><span class="color_token_name">#33B1F3<br> rgb(51,177,243)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary Cyan Dark<br><span class="token_desc_taks1">The Primary Cyan Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-cyan-dark<br>var(--color-cyan-dark)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token_2">
+
+                    </div><span class="color_token_name">#66C4F6<br> rgb(102,196,246)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary Cyan<br><span class="token_desc_taks1">The Primary Cyan carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-cyan-default<br>var(--color-cyan-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token_3">
+
+                    </div><span class="color_token_name">#99D8F9<br> rgb(153,216,249)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary Cyan Light<br><span class="token_desc_taks1">The Primary Cyan Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-cyan-light<br>var(--color-cyan-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token_4">
+
+                    </div><span class="color_token_name">#CCEBFC<br> rgb(204,235,252)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary Cyan Lighter<br><span class="token_desc_taks1">The Primary Cyan Light carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-cyan-lighter<br>var(--color-cyan-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token_5">
+
+                    </div><span class="color_token_name">#E6F5FD<br> rgb(230,245,253)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary Cyan Lightest<br><span class="token_desc_taks1">The Primary Cyan Light carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-cyan-lightest<br>var(--color-cyan-lightest)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_token_6">
+
+                    </div><span class="color_token_name">#FFFFFF<br> rgb(255,255,255)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Primary White<br><span class="token_desc_taks1">The Primary White carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-white-default<br>var(--color-white-default)
+                </div>
+            </div>
+
+            <!-- Second color ocean code start    -->
+
+            <div class="token_ramb">
+                <p class="token_text">Ocean Family</p>
+                <p class="token_text_desc">The Ocean Family denotes Water and used as the Secondary Color in all of its Water Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_ocean_1">
+
+                    </div><span class="color_token_name">#05326E<br> rgb(5,50,110)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Ocean Darkest<br><span class="token_desc_taks1">The Secondary Ocean Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-ocean-darkest<br>var(--color-ocean-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_ocean_2">
+
+                    </div><span class="color_token_name">#375B8B <br> rgb(55,91,139)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Ocean Dark<br><span class="token_desc_taks1">The Secondary Ocean Dark carries 80% Weightage of the dark color.</span>
+
+                </div>
+                <div class="section_task_3">$color-ocean-dark<br>var(--color-ocean-dark)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_ocean_3">
+
+                    </div><span class="color_token_name">#6884A8 <br> rgb(105,132,168)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Ocean<br><span class="token_desc_taks1">The Secondary Ocean Dark carries 80% Weightage of the dark color.</span>
+
+                </div>
+                <div class="section_task_3">$color-ocean-default<br>var(--color-ocean-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_ocean_4">
+
+                    </div><span class="color_token_name">#9BADC5 <br> rgb(155,173,197)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Ocean Light<br><span class="token_desc_taks1">The Secondary Ocean Light carries 40% Weightage of the dark color.</span>
+
+                </div>
+                <div class="section_task_3">$color-ocean-light<br>var(--color-ocean-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_ocean_5">
+
+                    </div><span class="color_token_name">#CDD6E2<br> rgb(205,214,226)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Ocean Lighter<br><span class="token_desc_taks1">The Secondary Ocean Lighter carries 20% Weightage of the dark color.</span>
+
+                </div>
+                <div class="section_task_3">$color-ocean-lighter<br>var(--color-ocean-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_ocean_6">
+
+                    </div><span class="color_token_name">#E6EBF0 <br> rgb(230,235,240)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Ocean Lightest<br><span class="token_desc_taks1">The Secondary Ocean Lightest carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-ocean-lightest<br>var(--color-ocean-lightest)
+                </div>
+            </div>
+
+
+
+
+            <!---   Second color ocean code end  -->
+
+
+
+            <!-- Third forest family start -->
+
+            <div class="token_ramb">
+                <p class="token_text">Forest Family</p>
+                <p class="token_text_desc">The Forest Family denotes land and used as the Secondary Color in Products such as Road and Ground Engineering in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_forest_1">
+
+                    </div><span class="color_token_name">#125A40<br> rgb(18,90,64)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Forest Darkest<br><span class="token_desc_taks1">The Secondary Forest Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-forest-darkest<br>var(--color-forest-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_forest_2">
+
+                    </div><span class="color_token_name">#417B66<br> rgb(65,123,102)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Forest Dark<br><span class="token_desc_taks1">The Secondary Forest Dark carries 80% Weightage of the darkest color..</span>
+
+                </div>
+                <div class="section_task_3">$color-forest-dark<br>var(--color-forest-dark)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_forest_3">
+
+                    </div><span class="color_token_name">#719C8D <br> rgb(113,156,141) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Forest<br><span class="token_desc_taks1">The Secondary Forest carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-forest-default<br>var(--color-forest-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_forest_4">
+
+                    </div><span class="color_token_name">#A0BDB2 <br> rgb(160,189,178)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Forest Light<br><span class="token_desc_taks1">The Secondary Forest Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-forest-light<br>var(--color-forest-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_forest_5">
+
+                    </div><span class="color_token_name">#D0DED9 <br>rgb(208,222,217)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Forest Lighter<br><span class="token_desc_taks1">The Secondary Forest Lighter carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-forest-lighter<br>var(--color-forest-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_forest_6">
+
+                    </div><span class="color_token_name">#E7EEEC <br> rgb(231,238,236)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Forest Lightest<br><span class="token_desc_taks1">The Secondary Forest Lightest carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-forest-lightest<br>var(--color-forest-lightest)
+                </div>
+            </div>
+
+
+
+            <!-- Third forest family end -->
+
+
+
+            <!-- Fourth heath family start  -->
+            <div class="token_ramb">
+                <p class="token_text">Heath Family</p>
+                <p class="token_text_desc">The Heath Family denotes non-farming land area and used for Ramboll Foundation and Rail Products.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_heath_1">
+
+                    </div><span class="color_token_name">#62294B <br> rgb(98,41,75)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Heath Darkest<br><span class="token_desc_taks1">The Secondary Heath Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-heath-darkest<br>var(--color-heath-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_heath_2">
+
+                    </div><span class="color_token_name">#81546F<br> rgb(129,84,111)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Heath Dark<br><span class="token_desc_taks1">The Secondary Heath Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-heath-dark<br>var(--color-heath-dark)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_heath_3">
+
+                    </div><span class="color_token_name">#A17E93<br> rgb(161,126,147)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Heath<br><span class="token_desc_taks1">The Secondary Heath carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-heath-default<br>var(--color-heath-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_heath_4">
+
+                    </div><span class="color_token_name">#C0A9B7 <br> rgb(192,169,183) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Heath Light<br><span class="token_desc_taks1">The Secondary Heath Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-heath-light<br>var(--color-heath-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_heath_5">
+
+                    </div><span class="color_token_name">#E0D4DB <br>rgb(224,212,219)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Heath Lighter<br><span class="token_desc_taks1">The Secondary Heath Lighter carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-heath-lighter<br>var(--color-heath-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_heath_6">
+
+                    </div><span class="color_token_name">#EFEAED <br>rgb(239,234,237) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Heath Lightest<br><span class="token_desc_taks1">The Secondary Heath Lightest carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-heath-lightest<br>var(--color-heath-lightest)
+                </div>
+            </div>
+
+            <!-- Fourth heath family end  -->
+
+            <!-- 5 Mountain Family start -->
+            <div class="token_ramb">
+                <p class="token_text">Mountain Family</p>
+                <p class="token_text_desc">The Mountain Family denotes large rocks and used as the Secondary Color in Products such as Structures and MEP in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_mount_1">
+
+                    </div><span class="color_token_name">#273943 <br> rgb(39,57,67)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Mountain Darkest<br><span class="token_desc_taks1">The Secondary Mountain Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-mountain-darkest<br>var(--color-mountain-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_mount_2">
+
+                    </div><span class="color_token_name">#7D888E <br> rgb(125,136,142)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Mountain Dark<br><span class="token_desc_taks1">The Secondary Mountain Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-mountain-dark<br>var(--color-mountain-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_mount_3">
+
+                    </div><span class="color_token_name">#7D888E <br> rgb(125,136,142)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Mountain<br><span class="token_desc_taks1">The Secondary Mountain carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-mountain-default<br>var(--color-mountain-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_mount_4">
+
+                    </div><span class="color_token_name">#A9B0B4 <br> rgb(169,176,180)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Mountain Light<br><span class="token_desc_taks1">The Secondary Mountain Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-mountain-light<br>var(--color-mountain-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_mount_5">
+
+                    </div><span class="color_token_name">#D4D7DA <br>rgb(212,215,218) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Mountain Lighter<br><span class="token_desc_taks1">The Secondary Mountain Lighter carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-mountain-lighter<br>var(--color-mountain-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_mount_6">
+
+                    </div><span class="color_token_name">#E9EBEC <br>rgb(233,235,236)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Mountain Lightest<br><span class="token_desc_taks1">The Secondary Mountain Lightest carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-mountain-lightest<br>var(--color-mountain-lightest)
+                </div>
+            </div>
+
+
+            <!-- 5 Mountain Family end -->
+
+            <!--  6 grass family start --->
+            <div class="token_ramb">
+                <p class="token_text">Grass Family</p>
+                <p class="token_text_desc">The Grass Family denotes purest plant form and used as the Secondary Color in Products such as Transport Planning, Bridges and Civil in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_grass_1">
+
+                    </div><span class="color_token_name">#009DF0 <br> rgb(0,157,240)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Grass Darkest<br><span class="token_desc_taks1">The Secondary Grass Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-grass-darkest<br>var(--color-grass-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_grass_2">
+
+                    </div><span class="color_token_name">#BDDAAA<br>  rgb(189,218,270)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Grass Dark<br><span class="token_desc_taks1">The Secondary Grass Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-grass-dark<br>var(--color-grass-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_grass_3">
+
+                    </div><span class="color_token_name">#CEE3C0 <br> rgb(206,227,192)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Grass<br><span class="token_desc_taks1">The Secondary Grass carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-grass-default<br>var(--color-grass-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_grass_4">
+
+                    </div><span class="color_token_name">#DEECD5 <br> rgb(222,236,213)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Grass Light<br><span class="token_desc_taks1">The Secondary Grass Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-grass-light<br>var(--color-grass-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_grass_5">
+
+                    </div><span class="color_token_name">#EFF6EA<br>rgb(239,246,234)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Grass Lighter<br><span class="token_desc_taks1">The Secondary Grass Lighter carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-grass-lighter<br>var(--color-grass-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_grass_6">
+
+                    </div><span class="color_token_name">#F7FAF4 <br>rgb(247,250,244) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Grass Lightest<br><span class="token_desc_taks1">The Secondary Grass Lightest carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-grass-lightest<br>var(--color-grass-lightest)
+                </div>
+            </div>
+
+            <!--  6 grass family end --->
+
+
+            <!--  7 pebble family start -->
+            <div class="token_ramb">
+                <p class="token_text">Pebble Family</p>
+                <p class="token_text_desc">The Pebble Family denotes small stones and used as combination with Secondary Colors all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Primary Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_pebble_1">
+
+                    </div><span class="color_token_name">#E3E1D8 <br> rgb(227,225,216)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Pebble Darkest<br><span class="token_desc_taks1">The Secondary Pebble Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-pebble-darkest<br>var(--color-pebble-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_pebble_2">
+
+                    </div><span class="color_token_name">#E9E7E0 <br>  rgb(233,231,224)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Pebble Dark<br><span class="token_desc_taks1">The Secondary Pebble Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-pebble-dark<br>var(--color-pebble-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_pebble_3">
+
+                    </div><span class="color_token_name">#EEEDE8<br>  rgb(238,237,232) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Pebble<br><span class="token_desc_taks1">The Secondary Pebble carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-pebble-default<br>var(--color-pebble-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_pebble_4">
+
+                    </div><span class="color_token_name">#F4F3EF  <br> rgb(244,243,239)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Pebble Light<br><span class="token_desc_taks1">The Secondary Pebble Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-pebble-light<br>var(--color-pebble-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_pebble_5">
+
+                    </div><span class="color_token_name">#F9F9F7 <br>rgb(249,249,247)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Pebble Lighter<br><span class="token_desc_taks1">The Secondary Pebble Lighter carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-pebble-lighter<br>var(--color-pebble-lighter)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_pebble_6">
+
+                    </div><span class="color_token_name">#FCFCFB  <br>rgb(252,252,251) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Secondary Pebble Lightest<br><span class="token_desc_taks1">The Secondary Pebble Lightest carries 10% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-pebble-lightest<br>var(--color-pebble-lightest)
+                </div>
+            </div>
+
+            <!--  7 pebble family end -->
+
+            <!-- spot family start -->
+            <div class="token_ramb">
+                <p class="token_text">Spot Family</p>
+                <p class="token_text_desc">The Spot Family Colors are used in a very less ratio compared to the Secondary Colors in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Spot Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_1">
+
+                    </div><span class="color_token_name">#FF8854  <br> rgb(255,136,84)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Field<br><span class="token_desc_taks1">The Primary Blue Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-spot-field<br>var(--color-spot-field)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_2">
+
+                    </div><span class="color_token_name">#FFE682  <br> rgb(255,230,130)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Sand<br><span class="token_desc_taks1">The Primary Blue Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-spot-sand<br>var(--color-spot-field)
+                </div>
+            </div>
+
+
+            <!-- spot family end -->
+
+
+            <!-- Supporting family start -->
+            <div class="token_ramb">
+                <p class="token_text">Supporting Family</p>
+                <p class="token_text_desc">The Supporting Family Colors are used to denote various states of an interaction in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Supporting Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_supp_1">
+
+                    </div><span class="color_token_name">#CC3232 <br> rgb(204,50,50) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Danger Red<br><span class="token_desc_taks1">The Primary Blue Dark carries 50% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-danger<br>var(--color-danger)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_supp_2">
+
+                    </div><span class="color_token_name">#FFE682 <br> rgb(255,230,130)  </span>
+
+                </div>
+                <div class="section_task_1">
+                    Success Green<br><span class="token_desc_taks1">The Primary Blue Dark carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-success<br>var(--color-success)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_supp_3">
+
+                    </div><span class="color_token_name">#F7B228 <br>rgb(247,178,40)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Warning Orange<br><span class="token_desc_taks1">The Primary Blue Dark carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-warning<br>var(--color-warning)
+                </div>
+            </div>
+
+            <!-- Supporting family end -->
+
+            <!-- spot field family start    -->
+            <div class="token_ramb">
+                <p class="token_text">Spot Field Family</p>
+                <p class="token_text_desc">The Spot Family Colors are used in a very less ratio compared to the Secondary Colors in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Spot Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_new_1">
+
+                    </div><span class="color_token_name">#FF8854 <br> rgb(255,136,84)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Field Darkest<br><span class="token_desc_taks1">The Spot Field Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-field-darkest<br>var(--color-field-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_new_2">
+
+                    </div><span class="color_token_name">#FF9F76  <br> rgb(255,159,118)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Field Dark<br><span class="token_desc_taks1">The Spot Field Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-field-dark<br>var(--color-field-dark)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_new_3">
+
+                    </div><span class="color_token_name">#FFB798 <br>  rgb(255,183,152)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Field<br><span class="token_desc_taks1">The Spot Field carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-field-default<br>var(--color-field-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_new_4">
+
+                    </div><span class="color_token_name">#FFCFBA <br> rgb(255,207,186)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Field Light<br><span class="token_desc_taks1">The Spot Field Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-field-light<br>var(--color-field-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_new_5">
+
+                    </div><span class="color_token_name">#FFE6DC <br>rgb(255,230,220) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Field Lightest<br><span class="token_desc_taks1">The Spot Field Lightest carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-field-lightest<br>var(--color-field-lightest)
+                </div>
+            </div>
+
+
+
+            <!-- spot field family end-->
+
+
+            <!-- spot sand family start  -->
+
+            <div class="token_ramb">
+                <p class="token_text">Spot Sand Family</p>
+                <p class="token_text_desc">The Spot Family Colors are used in a very less ratio compared to the Secondary Colors in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Spot Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_sand_1">
+
+                    </div><span class="color_token_name">#FFE682 <br> rgb(255,230,130) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Sand Darkest<br><span class="token_desc_taks1">The Spot Sand Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-sand-darkest<br>var(--color-sand-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_sand_2">
+
+                    </div><span class="color_token_name">#FFEA9A <br> rgb(255,234,154)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Sand Dark<br><span class="token_desc_taks1">The Spot Sand Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-sand-dark<br>var(--color-sand-dark)
+                </div>
+            </div>
+
+
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_sand_3">
+
+                    </div><span class="color_token_name">#FFEFB3 <br> rgb(255,239,179)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Sand<br><span class="token_desc_taks1">The Spot Sand carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-sand-default<br>var(--color-sand-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_sand_4">
+
+                    </div><span class="color_token_name">#FFF4CC <br>rgb(255,244,204) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Sand Light<br><span class="token_desc_taks1">The Spot Sand Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-sand-light<br>var(--color-sand-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_sand_5">
+
+                    </div><span class="color_token_name">#FFF9E5 <br>rgb(255,249,229) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Spot Sand Lightest<br><span class="token_desc_taks1">The Spot Sand Lightest carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-sand-lightest<br>var(--color-sand-lightest)
+                </div>
+            </div>
+
+            <!-- spot sand family end  -->
+
+            <!-- supporting danger family start -->
+            <div class="token_ramb">
+                <p class="token_text">Supporting Danger Family</p>
+                <p class="token_text_desc">The Supporting Danger Family colors are used in various states like error and failure in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Supporting Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_dang_1">
+
+                    </div><span class="color_token_name">#CC3232  <br> rgb(204,50,50) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Danger Darkest<br><span class="token_desc_taks1">The Supporting Danger Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-danger-darkest<br>var(--color-danger-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_dang_2">
+
+                    </div><span class="color_token_name">#D65A5A <br> rgb(214,90,90)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Danger Dark<br><span class="token_desc_taks1">The Supporting Danger Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-danger-dark<br>var(--color-danger-dark)
+                </div>
+            </div>
+
+
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_dang_3">
+
+                    </div><span class="color_token_name">#E08383 <br> rgb(224,131,131) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Danger<br><span class="token_desc_taks1">The Supporting Danger carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-danger-default<br>var(--color-danger-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_dang_4">
+
+                    </div><span class="color_token_name">#EAACAC <br>rgb(234,117,117)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Danger Light<br><span class="token_desc_taks1">The Supporting Danger Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-danger-light<br>var(--color-danger-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_dang_5">
+
+                    </div><span class="color_token_name">#F4D5D5 <br>rgb(244,213,213) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Danger Lightest<br><span class="token_desc_taks1">The Supporting Danger Lightest carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-danger-lightest<br>var(--color-danger-lightest)
+                </div>
+            </div>
+
+            <!-- supporting danger family end -->
+
+
+            <!--  supporting succes family start-->
+
+            <div class="token_ramb">
+                <p class="token_text">Supporting Success Family</p>
+                <p class="token_text_desc">The Supporting Success Family colors are used in various states like success and completion in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Supporting Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_succ_1">
+
+                    </div><span class="color_token_name">#00875A <br>rgb(0,135,90)   </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Success Darkest<br><span class="token_desc_taks1">The Supporting Success Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-success-darkest<br>var(--color-success-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_succ_2">
+
+                    </div><span class="color_token_name">#329E7A <br> rgb(50,158,122)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Success Dark<br><span class="token_desc_taks1">The Supporting Success Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-success-dark<br>var(--color-success-dark)
+                </div>
+            </div>
+
+
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_succ_3">
+
+                    </div><span class="color_token_name">#65B69B <br> rgb(101,182,155) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Success<br><span class="token_desc_taks1">The Supporting Success carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-success-default<br>var(--color-success-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_succ_4">
+
+                    </div><span class="color_token_name">#98CEBC <br>rgb(152,206,188) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Success Light<br><span class="token_desc_taks1">The Supporting Success Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-success-light<br>var(--color-success-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_succ_5">
+
+                    </div><span class="color_token_name">#CBE6DD <br>rgb(203,230,221)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Success Lightest<br><span class="token_desc_taks1">The Supporting Success Lightest carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-success-lightest<br>var(--color-success-lightest)
+                </div>
+            </div>
+            <!--  supporting succes family end-->
+
+            <!-- supporitng warning family start-->
+            <div class="token_ramb">
+                <p class="token_text">Supporting Warning Family</p>
+                <p class="token_text_desc">The Supporting Warning Family colors are used in various states like warning and alerts in all of the Products in Ramboll.</p>
+            </div>
+
+            <div class="container_token_task">
+                <div class="section_task">Supporting Colors</div>
+                <div class="section_task">Description</div>
+                <div class="section_task_new">Token</div>
+
+            </div>
+            <div class="border_line">
+
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_warn_1">
+
+                    </div><span class="color_token_name">#F7B228 <br>rgb(247,178,40)</span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Warning Darkest<br><span class="token_desc_taks1">The Supporting Warning Darkest carries 100% Weightage of the color.</span>
+
+                </div>
+                <div class="section_task_3">$color-warning-darkest<br>var(--color-warning-darkest)
+                </div>
+            </div>
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_warn_2">
+
+                    </div><span class="color_token_name">#F8C152 <br> rgb(248,193,82) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Warning Dark<br><span class="token_desc_taks1">The Supporting Warning Dark carries 80% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-warning-dark<br>var(--color-warning-dark)
+                </div>
+            </div>
+
+
+
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_warn_3">
+
+                    </div><span class="color_token_name">#FAD07D <br> rgb(250,208,125) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Warning<br><span class="token_desc_taks1">The Supporting Warning carries 60% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-warning-default<br>var(--color-warning-default)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_warn_4">
+
+                    </div><span class="color_token_name">#FBE0A8  <br>rgb(251,224,168) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Warning Light<br><span class="token_desc_taks1">The Supporting Warning Light carries 40% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-warning-light<br>var(--color-warning-light)
+                </div>
+            </div>
+
+            <div class="container_token_task_1">
+                <div class="section_task_1">
+                    <div class="btn_spot_warn_5">
+
+                    </div><span class="color_token_name">#FDEFD3<br> rgb(253,239,211) </span>
+
+                </div>
+                <div class="section_task_1">
+                    Supporting Warning Lightest<br><span class="token_desc_taks1">The Supporting Warning Lightest carries 20% Weightage of the darkest color.</span>
+
+                </div>
+                <div class="section_task_3">$color-warning-lightest<br>var(--color-warning-lightest)
+                </div>
+            </div>
+
+            <!-- supporitng warning family end-->
+
+
+
+
+
+
+        </div>
+
+        <!-- <p class="ex_rambla">Example</p> -->
+
+        <!-- main content    -->
+
+
+
+
+        <!--main content end-->
+    </section>
+
+    <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            var location = window.location.href;
+            $('#nav li a').each(function() {
+                if (location.indexOf(this.href) > -1) {
+                    // $(this).parent().addClass('active');
+                    $(this).parent().addClass('active-sub-link');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // $(document).ready(function() {
+        //     var location1 = window.location.href;
+        //     $('.nav__item-link+ul a').each(function() {
+        //         if (location1.indexOf(this.href) > -1) {
+        //             $(this).parent().addClass('active-sub-link');
+        //         }
+        //     });
+        // });
+    </script>
+
+    <script>
+        function myIcon(x) {
+            x.classList.toggle("fa-angle-up")
+        }
+    </script>
+
+
+
+</body>
+
+</html>
